@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="David Gracia">
+    <title>VIBIDA: Visualización multimedia de big data</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/vibida_style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/d3.min.js" charset='utf-8'></script>
+    <script type="text/javascript" src="js/iePolyfills.js"></script>
+    <script type="text/javascript" src="js/mapaScript.js"></script>
+    <script type="text/javascript" src="js/vibidaScript.js"></script>
+    <script type="text/javascript" src="js/chartsScript.js"></script>
+    <script type="text/javascript" src="js/manageGraphics.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="blank"></div>
+
+      <!-- Cabecera con selector administraciones fijo -->
+      <header style="text-align: center;">
+        <div class="header-selector">
+          <a href="http://labje.unizar.es/"><img src="img/labJE.png" alt="logo Laboratorio Jurídico-Empresarial (Universidad de Zaragoza)"></a>
+        </div>
+        <div class="header-selector">
+          <h1>Visualización de datos de Administraciones locales</h1>
+          <nav>
+            <div class="menu">
+                <select name="" id="division">
+                  <option value="DIP">Diputaciones</option>
+                  <option value="MUN" selected>Municipios</option>
+                </select>
+            </div>
+
+            <div class="menu with-head">
+              <div class="menu-head">Diputación</div>
+              <select name="" id="diputaciones"></select>
+            </div>
+
+            <div class="menu with-head">
+                <select name="" id="provincias"></select>
+              <div class="menu-head">Provincia</div>
+            </div>
+
+            <div class="menu with-head">
+              <div class="menu-head">Municipio</div>
+                <select name="" id="municipios"></select>
+            </div>
+
+            <div class="menu with-head">
+              <div class="menu-head">Año</div>
+                <select name="" id="periodo">
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012" selected="selected">2012</option>
+                </select>
+            </div>
+          </nav>
+        </div>     
+      </header>
+      <section class="contenido">
+        <section class="graficos">
+
+          <!-- Sección de TREEMAPS -->          
+          <section id="section2" class="seccion_grafico">
+            <div id="coll_bar2" class="collapse_bar head_section">
+              <h2>INGRESOS Y GASTOS</h2>
+              <div class="menu">
+                <select name="" id="tree-options">
+                  <option value="prog" selected="selected">Clasificación por programa</option>
+                  <option value="econ-ingr">Ingresos</option>
+                  <option value="econ-gast">Gastos</option>
+                </select>
+              </div>
+              <img id="coll_arrow2" class="up_arrow" src="img/arrow_up.svg" alt="Ocultar">
+            </div>
+            <div id="g2" class="contenedor_grafico">
+              <div class="contenedor_slides" id="contenedor2">
+                <div class="wrapper">
+                  <ul id="slides2">
+                    <li><div id="slide21">
+                         <div class="thumbnail-dashboard" id="dashboard211">
+                          <div class="thumbHeader" id="thumbHeader4"></div>
+                          <div class="treemapContainer" id="thumb4TreemapContainer"></div>
+                          <div class="thumbHeader" id="thumbHeader5"></div>
+                          <div class="treemapContainer" id="thumb5TreemapContainer"></div>
+                          <div class="thumbHeader" id="thumbHeader6"></div>
+                          <div class="treemapContainer" id="thumb6TreemapContainer"></div>
+                        </div>
+                        <div class="treemap-dashboard" id="dashboard212">
+                          <div class="treemapContainer" id="liqTreemapContainer"></div>
+                        </div>
+                    </div></li>
+                    <li>
+                      <div id="slide22">
+                        <div class="mHBar-dashboard" id="dashboard221">
+                          <div class="treemapHeader dashboard-header">
+                            <h3>Comparación de presupuesto y liquidación</h3>
+                            <div id="liqPreLegendContainer"></div>
+                          </div>
+                          <div id="mHBarColumns">
+                            <div class="mHBarColumn-dashboard" id="dashboard2211">
+                              <div class="hBarContainer" id="cap1HBarContainer"></div>
+                              <div class="hBarContainer" id="cap4HBarContainer"></div>
+                              <div class="hBarContainer" id="cap7HBarContainer"></div>
+                            </div>
+                            <div class="mHBarColumn-dashboard" id="dashboard2212">
+                              <div class="hBarContainer" id="cap2HBarContainer"></div>
+                              <div class="hBarContainer" id="cap5HBarContainer"></div>
+                              <div class="hBarContainer" id="cap8HBarContainer"></div>
+                            </div>
+                            <div class="mHBarColumn-dashboard" id="dashboard2213">
+                              <div class="hBarContainer" id="cap3HBarContainer"></div>
+                              <div class="hBarContainer" id="cap6HBarContainer"></div>
+                              <div class="hBarContainer" id="cap9HBarContainer"></div>
+                            </div>
+                          </div>
+                        </div>
+                    </div></li>
+                  </ul>
+                </div>
+                <img id="left2" class="left_arrow" src="img/arrow_left.svg" alt="Prev">
+                <img id="right2" class="right_arrow" src="img/arrow_right.svg" alt="Sig">
+                <div class="tooltip" id="tooltip2"></div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Sección de GAUGES -->
+          <section id="section1" class="seccion_grafico">
+            <div id="coll_bar1" class="collapse_bar head_section"><h2>LOS 10 PRINCIPALES INDICADORES FINANCIEROS</h2><img id="coll_arrow1" class="up_arrow" src="img/arrow_up.svg" alt="Ocultar"></div>
+            <div id="g1" class="contenedor_grafico">
+              <div class="contenedor_slides" id="contenedor1">
+                <div class="wrapper">
+                  <ul id="slides1">
+                    <li><div id="slide11">
+                      <div class="ratio-dashboard" id="dashboard111">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Déficit/Superávit per cápita</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide el equilibrio o desequilibrio presupuestario que la entidad ha tenido durante el ejercicio respecto al número de habitantes. Ha sido calculado como el total de ingresos menos el total de gastos, dividido por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio1GaugeContainer"></div>
+                        <div class="lineContainer" id="line1LineContainer"></div>
+                      </div>
+                      <div class="ratio-dashboard" id="dashboard112">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Ahorro neto per cápita</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">   
+                              Mide la capacidad de generar recursos corrientes para la financiación de gastos de capital. Ha sido calculado como la diferencia entre la suma de los capítulos 1 a 5 de ingresos y la suma de los capítulos 1 a 4 y 9 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio2GaugeContainer"></div>
+                        <div class="lineContainer" id="line2LineContainer"></div>
+                      </div>
+                      <div class="ratio-dashboard" id="dashboard113">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Ahorro bruto per cápita</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide la capacidad de generar recursos corrientes para la financiación de gastos derivados de la deuda y reembolso de deuda. Ha sido calculado como la diferencia entre la suma de los capítulos 1 a 5 de ingresos y la suma de los capítulos 1, 2 y 4 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio3GaugeContainer"></div>
+                        <div class="lineContainer" id="line3LineContainer"></div>
+                      </div>
+                    </div></li>
+                    <li><div id="slide12">
+                      <div class="ratio-dashboard" id="dashboard121">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Estabilidad presupuestaria</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide la capacidad de obtener el equilibrio presupuestario en operaciones corrientes y de capital en la liquidación del presupuesto. Ha sido calculada como la diferencia entre la suma de los capítulos 1 a 7 de ingresos y la suma de los capítulos 1 a 7 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio4GaugeContainer"></div>
+                        <div class="lineContainer" id="line4LineContainer"></div>
+                      </div>
+                      <div class="ratio-dashboard" id="dashboard122">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Gasto público por habitante</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide el gasto total per cápita que ha sido realizado en la entidad. Ha sido calculado como la suma de los capítulos 1 a 9 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio5GaugeContainer"></div>
+                        <div class="lineContainer" id="line5LineContainer"></div>
+                      </div>
+                      <div class="ratio-dashboard" id="dashboard123">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Gasto de inversión por habitante</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide los recursos destinados a inversión durante el ejercicio, tanto de forma directa como a través de subvenciones a otras entidades. Ha sido calculado como la suma de los capítulos 6 y 7 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio6GaugeContainer"></div>
+                        <div class="lineContainer" id="line6LineContainer"></div>
+                      </div>
+                    </div></li>
+                    <li><div id="slide13">
+                      <div class="ratio-dashboard" id="dashboard131">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Gasto de inversión directo por habitante</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide los recursos destinados a inversión directa durante el ejercicio. Ha sido calculado como el capítulo 6 de gastos, dividido por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio7GaugeContainer"></div>
+                        <div class="lineContainer" id="line7LineContainer"></div>
+                      </div>
+                      <div class="ratio-dashboard" id="dashboard132">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Ingresos fiscales por habitante</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide los ingresos per cápita, procedentes de impuestos y tasas. Ha sido calculada como la suma de los capítulos 1 a 3 de ingresos, dividida el por nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio8GaugeContainer"></div>
+                        <div class="lineContainer" id="line8LineContainer"></div>
+                      </div>
+                      <div class="ratio-dashboard" id="dashboard133">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Autonomía fiscal</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide la capacidad de la entidad para generar ingresos propios. Ha sido calculada como la suma de los capítulos 1 a 3 de ingresos, dividida por el total de ingresos.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio9GaugeContainer"></div>
+                        <div class="lineContainer" id="line9LineContainer"></div>
+                      </div>
+                      <div class="ratio-dashboard" id="dashboard134">
+                        <div class="gaugeHeader dashboard-header">
+                          <h3>Incremento de deuda per cápita</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide la deuda per cápita generada en el ejercicio. Ha sido calculado como el capítulo 9 de ingresos, dividido por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaugeContainer" id="ratio10GaugeContainer"></div>
+                        <div class="lineContainer" id="line10LineContainer"></div>
+                      </div>
+                    </div></li>
+                  </ul>
+                </div>
+                <img id="left1" class="left_arrow" src="img/arrow_left.svg" alt="Prev">
+                <img id="right1" class="right_arrow" src="img/arrow_right.svg" alt="Sig">
+                <div class="gauge-legend">
+                  <div id="expl" style="display: inline-block; vertical-align:top;">
+                    <svg style="width:125px; height:30px; display:block;">
+                      <g transform = "translate(5,5)">
+                        <rect width="30" height="20" x="0" y="0" style="fill: #FF9896;"></rect>
+                        <text x="35" y="0" dy="1em" style="font-size:12px; font-family:'Open Sans'; sans-serif;">De 0% a 25%</text>
+                      </g>
+                    </svg>
+                    <svg style="width:125px; height:30px; display:block;">
+                      <g transform = "translate(5,5)">
+                        <circle r="10" cx="15" cy="10" style="fill: rgba(0,0,0,0.75); stroke: #222; stroke-width: 1px;"></circle>
+                        <text x="35" y="0" dy="1em" style="font-size:12px; font-family:'Open Sans'; sans-serif;">50%</text>
+                      </g>
+                    </svg>
+                    <svg style="width:125px; height:30px; display:block;">
+                      <g transform = "translate(5,5)">
+                        <rect width="30" height="20" x="0" y="0" style="fill: #98DF8A;"></rect>
+                        <text x="35" y="0" dy="1em" style="font-size:12px; font-family:'Open Sans'; sans-serif;">De 75% a 100%</text>
+                      </g>
+                    </svg>
+                  </div>
+                  <div id="help" style="display: inline-block; vertical-align:top;">
+                    <div class="info">
+                      <img src="img/info2.svg" alt="info" style="height:1em; width:1em;">
+                      <div class="infoTooltip">
+                        <p>
+                          <span id="rojo"></span>
+                          El 25% de las localidades con valores más bajos.
+                        </p>
+                        <p>
+                          <span id="punto"></span>
+                          Marca el valor medio de todas las localidades.
+                        </p>
+                        <p>
+                          <span id="verde"></span>
+                          El 25% de las localidades con valores más altos.
+                        </p>
+                        <p id="pOutLimit"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tooltip" id="tooltip1">hola</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Sección de comparaciones -->
+          <section id="section3" class="seccion_grafico">
+            <div id="coll_bar3" class="collapse_bar subsection">
+              <h3>Comparar con:</h3>
+              <div class="menu">
+                <select name="" id="diputaciones2"></select>
+              </div>
+              <div class="menu">
+                <select name="" id="provincias2"></select>
+              </div>
+              <div class="menu">
+                <select name="" id="municipios2"></select>
+              </div>
+              <img id="coll_arrow3" class="up_arrow" src="img/arrow_up.svg" alt="Ocultar">
+            </div>
+            <div id="g3" class="contenedor_grafico">
+              <div class="contenedor_slides" id="contenedor3">
+                <div class="wrapper">
+                  <ul id="slides3">
+                    <li><div id="slide31">
+                      <div class="hBar-dashboard" id="dashboard311">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Déficit/Superávit per cápita</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide el equilibrio o desequilibrio presupuestario que la entidad ha tenido durante el ejercicio respecto al número de habitantes. Ha sido calculado como el total de ingresos menos el total de gastos, dividido por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio1HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard312">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Ahorro neto per cápita</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide la capacidad de generar recursos corrientes para la financiación de gastos de capital. Ha sido calculado como la diferencia entre la suma de los capítulos 1 a 5 de ingresos y la suma de los capítulos 1 a 4 y 9 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio2HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard313">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Ahorro bruto per cápita</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide la capacidad de generar recursos corrientes para la financiación de gastos derivados de la deuda y reembolso de deuda. Ha sido calculado como la diferencia entre la suma de los capítulos 1 a 5 de ingresos y la suma de los capítulos 1, 2 y 4 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio3HBarContainer"></div>
+                      </div>
+                    </div></li>
+                    <li><div id="slide32">
+                      <div class="hBar-dashboard" id="dashboard321">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Estabilidad presupuestaria</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide la capacidad de obtener el equilibrio presupuestario en operaciones corrientes y de capital en la liquidación del presupuesto. Ha sido calculada como la diferencia entre la suma de los capítulos 1 a 7 de ingresos y la suma de los capítulos 1 a 7 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio4HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard322">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Gasto público por habitante</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide el gasto total per cápita que ha sido realizado en la entidad. Ha sido calculado como la suma de los capítulos 1 a 9 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio5HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard323">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Gasto de inversión por habitante</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide los recursos destinados a inversión durante el ejercicio, tanto de forma directa como a través de subvenciones a otras entidades. Ha sido calculado como la suma de los capítulos 6 y 7 de gastos, dividida por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio6HBarContainer"></div>
+                      </div>
+                    </div></li>
+                    <li><div id="slide33">
+                      <div class="hBar-dashboard" id="dashboard331">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Gasto de inversión directo por habitante</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide los recursos destinados a inversión directa durante el ejercicio. Ha sido calculado como el capítulo 6 de gastos, dividido por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio7HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard332">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Ingresos fiscales por habitante</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide los ingresos per cápita, procedentes de impuestos y tasas. Ha sido calculada como la suma de los capítulos 1 a 3 de ingresos, dividida el por nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio8HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard333">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Autonomía fiscal</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide la capacidad de la entidad para generar ingresos propios. Ha sido calculada como la suma de los capítulos 1 a 3 de ingresos, dividida por el total de ingresos.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio9HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard334">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Incremento de deuda per cápita</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Mide la deuda per cápita generada en el ejercicio. Ha sido calculado como el capítulo 9 de ingresos, dividido por el nº de habitantes.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="ratio10HBarContainer"></div>
+                      </div>
+                    </div></li>
+                  </ul>
+                </div>
+                <img id="left3" class="left_arrow" src="img/arrow_left.svg" alt="Prev">
+                <img id="right3" class="right_arrow" src="img/arrow_right.svg" alt="Sig">
+                <div class="tooltip" id="tooltip3">hola</div>
+              </div>
+              <div id="indiCompLegendContainer">
+              </div>
+            </div>
+          </section>
+
+          <!-- Sección del MAPA -->  
+          <section id="section0">
+            <div id="coll_bar0" class="collapse_bar subsection">
+              <h3>Ver indicadores o seleccionar una Administración en Google Maps</h3>
+              <div class="menu">
+                  <select name="" id="indicadores">
+                    <option value="1">Déficit/Superávit per cápita</option>
+                    <option value="2">Ahorro neto per cápita</option>
+                    <option value="3">Ahorro bruto per cápita</option>
+                    <option value="4">Estabilidad presupuestaria</option>
+                    <option value="5">Gasto público por habitante</option>
+                    <option value="6">Gasto de inversión por habitante</option>
+                    <option value="7">Gasto de inversión directo por habitante</option>
+                    <option value="8">Ingresos fiscales por habitante</option>
+                    <option value="9">Autonomía fiscal</option>
+                    <option value="10">Incremento de deuda per cápita</option>
+                  </select>
+              </div>
+              <img id="coll_arrow0" class="up_arrow" src="img/arrow_up.svg" alt="Ocultar">
+            </div>
+            <div id="mapa"></div>
+          </section>
+
+          <!-- Sección de coste de servicios -->
+          <section id="section4" class="seccion_grafico">
+            <div id="coll_bar4" class="collapse_bar head_section">
+              <h2>GASTOS DE LOS PRINCIPALES SERVICIOS</h2>
+              <div class="menu">
+                <select name="" id="diputaciones3"></select>
+              </div>
+              <div class="menu">
+                <select name="" id="provincias3"></select>
+              </div>
+              <div class="menu">
+                <select name="" id="municipios3"></select>
+              </div>
+              <img id="coll_arrow4" class="up_arrow" src="img/arrow_up.svg" alt="Ocultar">
+            </div>
+            <div id="g4" class="contenedor_grafico">
+              <div class="contenedor_slides" id="contenedor4">
+                <div class="wrapper">
+                  <ul id="slides4">
+                    <li><div id="slide41">
+                      <div class="hBar-dashboard" id="dashboard411">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Vivienda y urbanismo</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Incluye todos los gastos de los servicios relacionados con la vivienda y el urbanismo, así como los complementarios de éstos. Ha sido calculado a partir del artículo <b>15. Vivienda y urbanismo</b> de la clasificación por programa de la liquidación. 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="serv1HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard412">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Saneamiento, abastecimiento y distribución de aguas.</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Incluye los gastos derivados de la construcción, mantenimiento, conservación y funcionamiento de los servicios de saneamiento, abastecimiento y distribución de agua. Ha sido calculado a partir del concepto <b>161. Saneamiento, abastecimiento y distribución de aguas</b> de la clasificación por programa de la liquidación.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="serv2HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard413">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Recogida, eliminación y tratamiento de residuos.</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Incluye los gastos derivados de la construcción, mantenimiento, conservación y funcionamiento de los servicios de recogida, eliminación o tratamiento de basuras. Ha sido calculado a partir del concepto <b>162. Recogida, eliminación y tratamiento de residuos</b> de la clasificación por programa de la liquidación.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="serv3HBarContainer"></div>
+                      </div>
+                    </div></li>
+                    <li><div id="slide42">
+                      <div class="hBar-dashboard" id="dashboard421">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Alumbrado público</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Incluye los gastos derivados de la construcción, mantenimiento, conservación y funcionamiento del servicio de alumbrado público. Ha sido calculado a partir del concepto <b>165. Alumbrado público</b> de la clasificación por programa de la liquidación.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="serv4HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard422">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Medio ambiente</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Incluye los gastos relativos a la protección y mejora del medio ambiente así como los de inversión y funcionamiento de los servicios de protección del medio natural; repoblación forestal; defensa contra incendios forestales, deslinde y amojonamiento o lucha contra la desertización; mantenimiento de playas y otros de naturaleza análoga. Ha sido calculado a partir del artículo <b>17. Medio ambiente</b> de la clasificación por programa de la liquidación.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="serv5HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard423">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Servicios Sociales y promoción social</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Incluye los gastos relativos a la gestión de los servicios sociales; prestación de servicios a personas dependientes y de asistencia social, residencias de ancianos y otros de naturaleza análoga, así como para la promoción de la igualdad de género, promoción y reinserción social de marginados. Ha sido calculado a partir del artículo <b>23. Servicios sociales y promoción social</b> de la clasificación por programa de la liquidación.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="serv6HBarContainer"></div>
+                      </div>
+                    </div></li>
+                    <li><div id="slide43">
+                      <div class="hBar-dashboard" id="dashboard431">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Sanidad</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Incluye los gastos que tienen por objeto la prevención y curación de enfermedades, así como el mantenimiento de un estado de inmunidad sanitario en la población. Ha sido calculado a partir del artículo <b>31. Sanidad</b> de la clasificación por programa de la liquidación.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="serv7HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard432">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Educación</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Incluye gastos derivados de la creación, conservación y funcionamiento de centros e Instituciones de enseñanzas de todo tipo y sus servicios complementarios, así como las transferencias a otros entes o familias para ayuda y fomento de la misma. Ha sido calculado a partir del artículo <b>32. Educación</b> de la clasificación por programa de la liquidación.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hBarContainer" id="serv8HBarContainer"></div>
+                      </div>
+                      <div class="hBar-dashboard" id="dashboard433">
+                        <div class="hBarHeader dashboard-header">
+                          <h3>Cultura</h3>
+                          <div class="info">
+                            <img src="img/info2.svg" alt="info">
+                            <div class="infoTooltip">
+                              Incluye los gastos originados por los servicios culturales, tales como gastos de creación, conservación y funcionamiento de los edificios destinados a bibliotecas, museos, archivos, casas de la cultura, actividades culturales, de esparcimiento y tiempo libre como hogares del jubilado o casas de la juventud; salas de exposiciones, palacios de congresos, parques zoológicos, bandas de música y agrupaciones musicales. Ha sido calculado a partir del artículo <b>33. Cultura</b> de la clasificación por programa de la liquidación.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="HBarContainer" id="serv9HBarContainer"></div>
+                      </div>
+                    </div></li>
+                  </ul>
+                </div>
+                <img id="left4" class="left_arrow" src="img/arrow_left.svg" alt="Prev">
+                <img id="right4" class="right_arrow" src="img/arrow_right.svg" alt="Sig">
+                <div class="tooltip" id="tooltip4">hola</div>
+              </div>
+              <div id="servicesLegendContainer">
+              </div>
+            </div>
+          </section>
+          
+          <!-- Sección de Correlación scatter plot -->
+          <section id="section5" class="seccion_grafico">
+            <div id="coll_bar5" class="collapse_bar new_section">
+              <h2>RELACIÓN ENTRE DOS INDICADORES</h2>
+              <div class="menu">
+                X: 
+                <select name="" id="factor1" class="limited">
+                  <option value="1" selected='true'>Población</option>
+                  <option value="2">Ingresos</option>
+                  <option value="3">Gastos</option>
+                  <option value="4">Déficit/Superávit per cápita</option>
+                  <option value="5">Ahorro neto per cápita</option>
+                  <option value="6">Ahorro bruto per cápita</option>
+                  <option value="7">Estabilidad presupuestaria</option>
+                  <option value="8">Gasto público por habitante</option>
+                  <option value="9">Gasto de inversión por habitante</option>
+                  <option value="10">Gasto de inversión directo por habitante</option>
+                  <option value="11">Ingresos fiscales por habitante</option>
+                  <option value="12">Autonomía fiscal</option>
+                  <option value="13">Incremento de deuda per cápita</option>
+                </select>
+              </div>
+              <div class="menu">
+                Y: 
+                <select name="" id="factor2" class="limited">
+                  <option value="1">Población</option>
+                  <option value="2" selected='true'>Ingresos</option>
+                  <option value="3">Gastos</option>
+                  <option value="4">Déficit/Superávit per cápita</option>
+                  <option value="5">Ahorro neto per cápita</option>
+                  <option value="6">Ahorro bruto per cápita</option>
+                  <option value="7">Estabilidad presupuestaria</option>
+                  <option value="8">Gasto público por habitante</option>
+                  <option value="9">Gasto de inversión por habitante</option>
+                  <option value="10">Gasto de inversión directo por habitante</option>
+                  <option value="11">Ingresos fiscales por habitante</option>
+                  <option value="12">Autonomía fiscal</option>
+                  <option value="13">Incremento de deuda per cápita</option>
+                </select>
+              </div>
+              <button type="button" id="ScatterButton">Calcular</button>
+              <div class="info" id="ScatterInfo">
+                <img src="img/info2.svg" alt="info">
+                <div class="infoTooltip">
+                  <p>El cálculo se realiza con las entidades del rango de población al que pertenece la entidad seleccionada. Los intervalos son:</p>
+                  <ul>
+                    <li>Hasta 5000 habitantes</li>
+                    <li>Entre 5001 y 50.000 habitantes</li>
+                    <li>Más de 50.000 habitantes</li>
+                  </ul>
+                </div>
+              </div>
+              <img id="coll_arrow5" class="up_arrow" src="img/arrow_up.svg" alt="Ocultar">
+            </div>
+            <div id="g5" class="contenedor_grafico">
+              <div class="contenedor_slides" id="contenedor5">
+                <div class="wrapper" id="scatterWrapper">
+                  <div class="scatterPlot-dashboard" id="dashboard51">
+                      <div class="scatterPlotHeader dashboard-header">
+                        <h4>Coeficiente de determinación R<sup>2</sup>: </h4>
+                        <span id="corr"></span>
+                        <div class="info">
+                          <img src="img/info2.svg" alt="info">
+                          <div class="infoTooltip">
+                            <b>El coeficiente de determinación R2</b> mide la calidad del ajuste realizado mediante la recta de regresión lineal. Varía entre 0 (un mal ajuste) y 1 (un ajuste excelente).
+                          </div>
+                        </div>
+                      </div>
+                      <div class="scatterPlotContainer" id="sPlot1ScatterPlotContainer"></div>
+                  </div>
+                </div>
+              <img id="load-img" src="img/loading.gif" alt="loading">
+              <div id="scatter-timeout"><p><b>Error:</b></p> <p style="margin-left:8px;">Tiempo de cálculo superado.</p> <p style="margin-left:8px;">Vuelva intentarlo más tarde.</p></div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <div class="push"></div>
+    </div>
+
+    <!-- Pie de la página (sticky footer) -->
+    <footer>
+      <a href="html/proyectoVIBIDA.html" >Proyecto VIBIDA 2014</a>
+      <img class="logo left" src="img/LOGO_MINECO.JPG" alt="logo ministerio de economia y competitividad">
+      <img class="logo right" src="img/logo_dga_dii.jpg" alt="logo Departamento de Industria e Inovación">
+    </footer>
+  </body>
+</html>

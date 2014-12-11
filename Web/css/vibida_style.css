@@ -1,0 +1,935 @@
+/********************************************************************/
+/* Fichero:     vibida_style.css                                    */
+/* Autor:       David Gracia Larrodé   dagrala@gmail.com            */
+/* Descripción: Hoja de estílo de la aplicación web desarrollada    */
+/*              en el proyecto VIBIDA.                              */
+/********************************************************************/
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+div#container {
+  width: 100%;
+  min-height: 100%;
+  margin: 0px auto -123px;
+}
+
+#mapa {
+  height: 400px;
+  width: 100%;
+  margin-top: 3px;
+  border-radius: 10px;
+}
+
+div.barra_mapa {
+  padding: 10px;
+  background-color: #ddf;
+}
+
+header {
+  background-color: #FFF;
+  color: #000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 3px solid #B72C31;
+}
+
+header div.header-selector {
+  float:left;
+  display: inline-block;
+  height: 150px;
+  padding: 10px;
+}
+
+header div.header-selector img{
+  border: none;
+}
+
+header div.header-canvas {
+  float: right;
+  display: inline-block;
+  height: 150px;
+  padding: 10px;
+}
+
+header div.header-selector h1 {
+  text-align: left;
+  margin: 10px 0px 20px 10px;
+  font-size: 1.55em;
+}
+
+header div.header-selector div.menu{
+  margin: auto 10px;
+}
+
+.push {
+  height: 123px;
+}
+
+footer {
+  height: 120px;
+  background-color: #FFF;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  clear: both;
+  font-weight: bold;
+  border-top: 3px solid #B72C31;
+}
+
+footer a {
+  margin: 10px auto;
+}
+
+/* DIV que tiene la misma altura del header para que no oculte otro elemento*/
+div.blank {
+  margin-bottom: 10px;
+  height: 170px;
+  clear: both;
+}
+
+
+
+/* Estilos de zona gráficos*/
+section.seccion_grafico {
+  margin: 10px 0px;
+  clear: both;
+}
+
+div.menu {
+  float: left;
+  background-color: #F0F0F0;
+  padding: 3px;
+  margin: auto 0px auto 20px;
+  border-radius: 3px;
+  border: 1px solid #333;
+}
+
+div.menu.with-head {
+  display:inline-block;
+  position: relative;
+}
+
+div.menu div.menu-head {
+  text-align: left;
+  position: absolute;
+  font-size: 12px;
+  top: -18px;
+  float:left;
+}
+
+div.menu select {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-overflow: '';
+  max-width: 350px;
+}
+
+div.menu select.limited {
+  max-width: 280px;
+}
+
+nav div.menu select {
+  max-width: 200px;
+}
+
+div.menu select option {
+  background-color: #EEE;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #333;
+  border-left: none;
+}
+
+span.bold_separated {
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+text.texto_mapa {
+  text-anchor: middle;
+  font-size: 32px;
+}
+
+section div.head_section {
+   background-color: #FCB046;
+}
+
+section div.new_section {
+  background-color: #C5B0D5;
+}
+
+div.collapse_bar {
+  height: 30px;
+  background-color: #FCB85F;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 10px 10px 30px;
+
+  clear: both;
+
+  box-shadow: 0px 2px 2px rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+
+div.collapse_bar h2, div.collapse_bar h3 {
+  float: left;
+}
+
+div.collapse_bar h2:hover, div.collapse_bar h3:hover{
+  color: #777;
+  cursor: default;
+}
+
+div.collapse_bar img {
+  float: right;
+  height: 35px;
+}
+
+div.collapse_bar div.info {
+  float: left;
+}
+
+div.collapse_bar div.info img{
+  height: 1.1em;
+  width: 1.1em;
+}
+
+div.collapse_bar.subsection {
+  padding-left: 60px;
+}
+
+div.contenedor_grafico{
+  margin: 0px auto;
+}
+
+
+
+div.contenedor_slides {
+  float: left;
+  display: inline;
+  position: relative;
+}
+
+div.wrapper {
+  float: left;
+  overflow: hidden;
+}
+
+div.wrapper ul {
+  list-style: none;
+}
+
+div.wrapper ul li {
+  float: left;
+}
+
+
+div.wrapper ul li>div {
+  text-align: center;
+}
+
+div.wrapper ul li>div img {
+  width: 80%;
+  height: 80%;
+}
+
+div.wrapper ul li div.ratio-dashboard {
+  display: inline-block;
+}
+
+div.wrapper ul li div.ratio-dashboard div {
+  margin-bottom: 10px;
+}
+
+div.wrapper ul li div.ratio-dashboard div.gaugeHeader h3 {
+  display: inline;
+  vertical-align: middle;
+}
+
+div.wrapper ul li div.ratio-dashboard div.gaugeHeader img {
+  width:1.1em;
+  height:1.1em;
+  margin-left: 5px;
+  vertical-align: middle;
+
+}
+
+div.wrapper ul li div.hBar-dashboard {
+  display: inline-block;
+}
+
+div.wrapper ul li div.hBar-dashboard div {
+  margin-bottom: 10px;
+}
+
+
+div.wrapper ul li div.hBar-dashboard div.hBarHeader h3 {
+  display: inline;
+  vertical-align: middle;
+}
+
+div.wrapper ul li div.hBar-dashboard div.hBarHeader img {
+  width:1.1em;
+  height:1.1em;
+  margin-left: 5px;
+  vertical-align: middle;
+
+}
+
+div.wrapper ul li div.treemap-dashboard {
+  display: inline-block;
+}
+
+div.wrapper ul li div.treemap-dashboard div {
+  margin-bottom: 40px;
+  vertical-align: middle;
+}
+
+
+div.wrapper ul li div.treemap-dashboard div.treemapHeader h3 {
+  display: inline;
+  vertical-align: middle;
+}
+
+div.wrapper ul li div.treemap-dashboard div.treemapHeader img {
+  width:1.1em;
+  height:1.1em;
+  margin-left: 5px;
+  vertical-align: middle;
+
+}
+
+div.wrapper ul li div.mHBar-dashboard div.treemapHeader h3 {
+  vertical-align: middle;
+}
+
+div.wrapper ul li div.mHBar-dashboard div#mHBarColumns {
+  text-align: center;
+}
+
+div.wrapper ul li div.mHBarColumn-dashboard {
+  display: inline-block;
+}
+
+div.wrapper ul li div.thumbnail-dashboard {
+  display: inline-block;
+  float:left;
+}
+
+div.wrapper ul li div.thumbnail-dashboard div.treemapContainer {
+  margin-bottom: 2px;
+}
+
+div.wrapper ul li div.mHBar-dashboard {
+  display: inline-block;
+}
+
+div.wrapper ul li div.mHBar-dashboard div {
+  margin-bottom: 10px;
+}
+
+
+div.wrapper ul li div.areaCircle-dashboard {
+  display: inline-block;
+}
+
+div.wrapper ul li div.areaCircle-dashboard div {
+  margin-bottom: 10px;
+}
+
+
+div.wrapper ul li div.areaCircle-dashboard div.areaCircleHeader h3 {
+  display: inline;
+  vertical-align: middle;
+}
+
+div.wrapper ul li div.areaCircle-dashboard div.areaCircleHeader img {
+  width:1.1em;
+  height:1.1em;
+  margin-left: 5px;
+  vertical-align: middle;
+
+}
+
+div#scatterWrapper{
+  text-align: center;
+}
+div.wrapper div.scatterPlot-dashboard {
+  display: inline-block;
+  margin-top: 20px
+}
+
+div.wrapper div.scatterPlot-dashboard div.scatterPlotContainer {
+  margin-bottom: 10px;
+}
+
+div.wrapper div.scatterPlot-dashboard div.scatterPlotHeader h4{
+  display: inline;
+  vertical-align: middle;
+}
+
+div.wrapper div.scatterPlot-dashboard div.scatterPlotHeader span{
+  color: #B72C31;
+  vertical-align: middle;
+}
+
+div.wrapper div.scatterPlot-dashboard div.scatterPlotHeader img {
+  width:1.1em;
+  height:1.1em;
+  margin-left: 5px;
+  vertical-align: middle;
+
+}
+
+/*Estílo SVG line charts*/
+svg.line-chart .axis path,
+svg.line-chart .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/*Estílo SVG de los gráficos de barras horizontales*/
+svg.hBar .axis text{
+  font: 10px sans-serif;
+}
+
+svg.hBar g.bar text{
+  font: 12px sans-serif;
+  fill: #000;
+}
+
+.axis path,
+svg.hBar .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/*SVG flechas laterales de los slides*/
+img.left_arrow{
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  z-index: 99;
+  clear: left;
+}
+
+img.right_arrow{
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  z-index: 99;
+  clear: left;
+}
+
+/*Leyendas de indicadores, servicios y comparación de 
+liquidación y presupuesto (ingresos y gastos)*/
+div#indiCompLegendContainer, div#servicesLegendContainer{
+  clear:both; 
+  text-align:center; 
+  display:block; 
+  padding-top:10px;
+}  
+
+div#liqPreLegendContainer{
+  clear:both; 
+  text-align:center; 
+  display:block;
+}  
+
+/*estílo de tooltip*/
+div.tooltip {
+  position: absolute;           
+  text-align: center;  
+  vertical-align: middle;         
+  width: 120px;                  
+  height: auto;
+  font: 12px sans-serif;        
+  background: white;
+  border: 3px solid #B72C31;      
+  border-radius: 10px;           
+  pointer-events: none;
+  padding: 4px;
+  opacity: 0;
+}
+
+#legend {
+   background-color: #FFF;
+   margin: 10px;
+   padding: 5px;
+   width: 150px;
+ }
+
+ #legend p {
+   font-weight: bold;
+   margin-top: 3px;
+ }
+
+ #legend div {
+   clear: both;
+ }
+
+ .color {
+   height: 12px;
+   width: 12px;
+   margin-right: 3px;
+   float: left;
+   display: block;
+   border: 1px solid #aaaaaa;
+ }
+
+/*leyenda de gráficos gauge*/
+div.gauge-legend {
+  background-color: #fff;
+  position: absolute;
+  border: 3px solid #B72C31;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*logos del footer*/
+img.logo {
+  margin: 10px;
+  height: 100px;
+}
+img.logo.left{
+  float: left;
+  width: 194.5px;
+}
+img.logo.right{
+  float: right;
+  width: 276.5px;
+}
+
+/*botón de la sección "relación entre dos indicadores"*/
+button#ScatterButton {
+  width: 150px;
+  height: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family:  'Open Sans', sans-serif;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  position: relative;
+  margin-left: 20px;
+  
+  background: #B72C31;
+  
+  /* BORDER RADIUS */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  
+  border: 1px solid #E87D7F;
+  border-top: 1px solid #C3D6DF;
+  
+  /* TEXT SHADOW */
+  text-shadow: 1px 1px 1px black;
+  
+  /* BOX SHADOW */
+  -moz-box-shadow: 0 1px 3px black;
+  -webkit-box-shadow: 0 1px 3px black;
+  box-shadow: 0 1px 3px black;
+  
+}
+
+button#ScatterButton:hover:not([disabled]) {
+  background: #EE0000;
+}
+
+/* mientras se hace click */
+button#ScatterButton:active:not([disabled]) {
+  -moz-box-shadow: 0 2px 6px black;
+  -webkit-box-shadow: 0 2px 6px black;
+  box-shadow: 0 2px 6px black;
+}
+
+button#ScatterButton:disabled {
+  background: #CE5C60;
+  color: #CCC;
+}
+
+
+div.info {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 5px;
+  position: relative;
+}
+
+div.infoTooltip{
+  
+  top: 30px;
+  left: -200px;
+
+  position: absolute;           
+  text-align: justify;  
+  vertical-align: middle;         
+  width: 200px;                  
+  height: auto;                 
+  font: 12px sans-serif;        
+  background: white;
+  border: 3px solid #3A82BC;      
+  border-radius: 10px;           
+  pointer-events: none;
+  padding: 10px;
+  opacity: 0;
+  z-index: 100;
+}
+
+div#infoTooltipMap{
+  
+  top: -180px;
+  left: -250px;
+
+  position: absolute;           
+  text-align: justify;  
+  vertical-align: middle;         
+  width: 200px;                  
+  height: auto;                 
+  font: 12px sans-serif;     
+  background: white;
+  border: 3px solid #3A82BC;      
+  border-radius: 10px;           
+  pointer-events: none;
+  padding: 18px;
+  opacity: 0;
+}
+
+div#infoTooltipMap>p{
+  font-weight: normal;   
+}
+
+span#rojo{
+  background-color: #FF9896;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  margin: 5px 5px 0px 0px;
+  float: left;
+}
+span#punto{
+  background-color: rgba(0,0,0,0.75);
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 5px 7.5px 0px 7.5px;
+  float: left;
+}
+span#verde{
+  background-color: #98DF8A;
+  width: 30px;
+  height: 20px; 
+  display: inline-block;
+  margin: 5px 5px 0px 0px;
+  float: left;
+}
+
+div.info p {
+  margin-bottom: 5px;
+  line-height: 15px
+}
+
+div.infoTooltip ul {
+  margin-left: 25px;
+}
+
+section.contenido {
+  width: 99%;
+  margin: 0px auto;
+}
+
+/*circulo del scatter-plot cuando se pasa por encima el ratón*/
+svg.scatter-plot circle.dot:hover {
+   stroke-width: 2px;
+   stroke: #3A82BC;
+}
+
+div#contenedor5 {
+  position: relative;
+}
+
+/*Imagen de carga durante la consulta a BigQuery*/
+img#load-img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  visibility: hidden;
+}
+
+/*Mensaje de error ante la consulta de BigQuery*/
+div#scatter-timeout {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  visibility: hidden;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 2px 1px rgba(0,0,0,.6);
+  font-size: 14px;
+  background-color: #fff;
+}
+
+div#sPlot1ScatterPlotContainer{
+  position: relative;
+}
+
+div.scatter-tooltip {
+  position: absolute;           
+  text-align: center;  
+  vertical-align: middle;
+  height: auto;
+  font: 12px sans-serif;        
+  background: white;
+  border: 2px solid #B72C31;      
+  border-radius: 8px;           
+  pointer-events: none;
+  padding: 2px 3px;
+  opacity: 0;
+}
+
+span.square{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin: 0px 5px 0px 0px;
+  float: left;
+  border: 1px solid #ccc;
+}
+
+svg.hBar g.bar text {
+  font-size: 16px;
+}
+
+svg.treemap, svg.thumb-treemap, div.thumbHeader{
+  overflow: hidden;
+}
+
+p#pOutLimit {
+  display: none;
+}
+
+/**********************************/
+/*        media queries           */
+/**********************************/
+
+/*Para que se adapte el estílo según la anchura del dispositivo*/
+/* máxima anchura 1024px */
+@media (max-width: 1024px){
+  
+  div#coll_bar5 div.menu select, div#coll_bar4 div.menu select{
+    max-width: 150px;
+  }
+  button#ScatterButton {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+/* máxima anchura 979px */
+@media (max-width: 979px){
+  header div.header-selector {
+    float:left;
+    display: inline-block;
+    height: 110px;
+    padding: 10px;
+  }
+
+  header div.header-selector h1 {
+    text-align: left;
+    margin: 10px 0px 20px 10px;
+    font-size: 1.1em;
+  }
+
+  header div.header-selector div.menu select, div.collapse_bar div.menu select{
+    max-width: 100px;
+  }
+
+  div#coll_bar0 div.menu select, div#coll_bar2 div.menu select{
+    max-width: 270px;
+  }
+
+  button#ScatterButton {
+    width: 100px;
+    height: 30px;
+  }
+
+
+   div.blank{
+    height:130px;
+  }
+
+  header div.header-selector img {
+    height: 93px;
+    width: 200px;
+  }
+
+
+  div.collapse_bar {
+    padding-left: 15px;
+  }
+
+  div.collapse_bar.subsection {
+    padding-left: 25px;
+  }
+
+  div.collapse_bar h2 {
+    font-size: 1.2em;
+    padding-top: 3px;
+  }
+
+  div.collapse_bar h3 {
+    font-size: 1em;
+    padding-top: 5px;
+  }
+
+  footer {
+    height: 95px;
+  }
+
+  div#container {
+    margin: 0px auto -98px;
+  }
+
+  .push {
+    height: 98px;
+  }
+
+  img.logo {
+    margin: 10px;
+    height: 75px;
+  }
+  img.logo.left{
+    width: 145.9px;
+  }
+  img.logo.right{
+    width: 207.4px;
+  }
+
+  div.dashboard-header h3 {
+    font-size: 14px;
+  }
+
+  div.dashboard-header h4{
+    font-size: 12px;
+  }
+  
+  div#sPlot1ScatterPlotContainer svg {
+    font-size: .8em;
+  }
+
+  div.hBarContainer g.tick text {
+    font-size: 8px;
+  }
+
+  img#load-img {
+    width: 150px;
+    height: 150px;
+    
+    margin-top: -75px;
+    margin-left: -75px;
+  }
+
+  div.tooltip {        
+    width: 100px;
+    height: auto;                      
+  }
+
+  /* Leyenda de comp de presupuesto y liquidación */
+  div#liqPreLegendContainer {
+    font-size: 12px;
+  }
+
+  svg.legend{
+    height: 35px;
+  }
+
+  svg.legend g {
+    transform: translate(0,-20);
+  }
+
+  svg.thumb-header text {
+    font-size: 10px;
+  }
+  
+  div.wrapper ul li div.thumbnail-dashboard{
+    margin-top: 8%;
+  } 
+
+  div.wrapper ul li div.mHBar-dashboard div {
+    margin-bottom: 0px;
+  }
+
+  .hbar-title {
+    font-size: 10px;
+  }
+
+  svg.hBar g.bar text {
+    font-size: 8px;
+  }
+  
+  svg.legend g.legend_line text {
+    font-size: 12px;
+  }
+
+  /* leyenda de gauges */
+   div.gauge-legend {
+    padding: 1px;
+  }
+  
+  div.infoTooltip{
+    
+    top: 10px;
+    left: -130px;
+
+    width: 130px;                  
+    height: auto;                 
+    font: 10px sans-serif;    
+    border: 2px solid #3A82BC;
+    padding: 5px;  
+  }
+
+  div#g4 div.infoTooltip{
+    
+    top: 10px;
+    left: -130px;
+
+    width: 190px;                  
+    height: auto;                 
+    font: 10px sans-serif;    
+    border: 2px solid #3A82BC;
+    padding: 5px;  
+    z-index: 100px;
+  }
+
+
+}

@@ -1,25 +1,29 @@
-<h2>Proyecto VIBIDA: <span>Visualización multimedia de big data</span></h1>
+<h1><a href="http://vibida.unizar.es/">Proyecto VIBIDA:</a> <span>Visualización multimedia de big data</span></h1>
 =======================================================
 <p align='justify'>La presente herramienta para la visualización de datos de Administraciones locales ha sido desarrollada en el marco del proyecto <i>Visualización multimedia de big data</i> (VIBIDA), perteneciente a la convocatoria del año 2013 de Proyectos de investigación en el ámbito de las tecnologías de la información y las comunicaciones, del Gobierno de Aragón. El proyecto está siendo desarrollado por el Laboratorio Avanzado de Aplicaciones Jurídicas y Empresarial en la Sociedad de la Información de la Universidad de Zaragoza, situado en el Parque Tecnológico Walqa, de Huesca (labje.unizar.es).</p>
 
 <p align='justify'>La herramienta, que se considera desarrollada a nivel de prototipo, permite la visualización de datos de las Administraciones locales españolas, a partir de ficheros en formato XBRL proporcionados por el Ministerio de Economía y Hacienda. Se pueden visualizar los datos disponibles hasta la fecha, que corresponden a 2010, 2011 y 2012, pero como se utiliza un formato estándar es posible incorporar nueva información de forma sencilla. El software es de uso libre y está licenciado bajo licencia Creative Commons reconocimiento v.3. Para ponerse en contacto con los desarrolladores del proyecto puede enviar un correo electrónico a jfm@unizar.es.</p>
 
 <p align='justify'>En la herramienta se reflejan los tres ejes en torno a los cuales se ha articulado el proyecto VIBIDA y que son los siguientes:</p>
+<ul>
+<li><h4>Utilización de estándares basados en XBRL</h4></li>
+<li><h4>Visualización de los datos</h4></li>
+<li><h4>Utilización de herramientas para datos masivos (<i>big data</i>)</h4></li>
+</ul>
+=======================================================
+<h2>Instalacion de aplicación web</h2>
+<h4>Requisitos máquina donde se hospeda la aplicación:</h4>
+<ul>
+<li><b>SO:</b> Windows 7 Enterprise, Service Pack 1</li>
+<li><b>Procesador:</b> Intel(R) Xeon(R) CPU  E5606 @ 2.13GHz</li>
+<li><b>RAM:</b> 1GB</li>
+<li><b>Tipo de sistema:</b> 32 bits</li>
+<li><b>Servidor Apache 2.2 con modulo PHP 5.3.8</b></li>
+</ul>
+<p align='justify'>Para poder instalar la aplicación web solo es necesario un <b>servidor Apache</b> con el módulo de <b>PHP</b> correspondiente habilitado. Descargando la carpeta <b>Web</b> del proyecto y colocandola en el directorio <b>htdocs</b> del servidor, se tendra un duplicado de la aplicación <a href="http://vibida.unizar.es/">VIBIDA</a>, salvo por la carpeta <b>data</b>, que solo posee ficheros de configuración e información general.</p>
 
-  <h4>Utilización de estándares basados en XBRL</h4>
+<p align='justify'>Para poder acceder a los datos de administraciones locales desde 2010 hasta el último año con información que ha servido el <a href="http://www.minhap.gob.es/">Ministerio de Hacienda y Adminstraciones Públicas del Gobierno de España<a>, por el momento <b>2012</b>, se ha habilitado una URL donde poder <b>descargar</b> dicha información comprimida en un fichero <i>zip</i>. El enlace es el siguiente: <a href="http://vibida.unizar.es/datos_acum_periodo/">http://vibida.unizar.es/datos_acum_periodo/</a>. Dentro del fichero <i>zip</i> hay un carpeta <b>data</b>, al volcar su contenido en la homónima del servidor la aplicación será funcional.</p>
 
-<p align='justify'>El primer objetivo del proyecto es facilitar a las entidades locales los medios para que puedan crear con un coste mínimo una sección en su sede electrónica dedicada a la información financiera y contable. Para ello los datos se aportan utilizando ficheros en formato estándar generados por el programa de contabilidad.</p>
-
-<p align='justify'>Los estándares utilizados son dos taxonomías del XBRL (<i>eXtensible Business Reporting Language</i>), que es aceptado internacionalmente para el intercambio de información financiera. Las taxonomías utilizadas han sido definidas por la Secretaría General de Coordinación Autonómica y Local (SGCAL), de acuerdo con lo dispuesto en la Orden EHA 468/2007, y son PENLOC, que contiene los datos sobre los presupuestos, y LENLOC que contiene los correspondientes a las liquidaciones de los mismos. La información proporcionada de este modo a la ciudadanía podría ampliarse en su contenido y mejorarse en su frecuencia utilizando la taxonomía TRIMLOC, recientemente definida para los datos de las ejecuciones trimestrales.</p>
-
-<h4>Visualización de los datos</h4>
-
-<p align='justify'>Un segundo objetivo del proyecto es conseguir una forma de visualización que resulte gráfica, fácil de interpretar y sinóptica. Para ello la herramienta se ha desarrollado siguiendo un formato de "cuadro de mando", mediante una única página web en la que se sintetiza toda la información. El usuario accede a la misma desplegando distintas partes de la página, y sin necesidad de navegar utilizando enlaces. Por otra parte, dentro de las acciones del proyecto se realizó un análisis exhaustivo de diferentes presentaciones gráficas para los datos, pero en las pruebas realizadas se llegó a la conclusión de que era mejor utilizar gráficos sencillos, como los que puede verse en la página, ya que resultaron los más eficaces para comunicar la información a la ciudadanía. Finalmente, algunos gráficos han sido enriquecidos con elementos adicionales. Por ejemplo, al profundizar en los gráficos "tree map" se muestran los pasos anteriores, para que el usuario pueda en todo momento visualizar el peso relativo de las distintas partidas.</p>
-
-<h4>Utilización de herramientas para datos masivos (<i>big data</i>)</h4>
-
-<p align='justify'>El tercer objetivo del proyecto VIBIDA es explorar el uso de herramientas desarrolladas para el tratamiento masivo de datos en la visualización en tiempo real de estadísticas sobre datos financieros y contables de las entidades locales. Tras el análisis de diferentes posibilidades se decidió utilizar Google BigQuery. Entre los motivos para ello cabe destacar el que al tratarse de un servicio se encuentra disponible de forma inmediata, sin necesidad de realizar un costoso desarrollo previo. Este desarrollo, exigido por otras opciones, era inasumible con los recursos y plazos del proyecto y probablemente también lo sea para muchas entidades locales.</p>
-
-<p align='justify'>El prototipo permite comprobar la utilidad de las herramientas "big data" a la hora de permitir que los ciudadanos actúen de forma interactiva con grandes volúmenes de datos, sin que la información a la que acceden quede restringida a un conjunto de cálculos estadísticas y graficas previamente elaborados. La implementación realizada en el prototipo permite realizar el cálculo de la correlación de los distintos indicadores entre sí y con otros tres factores: la población, los ingresos y los gastos. Los datos de las más de 8000 entidades locales se almacenan en una única tabla, cuyo tamaño es de 4,30 GB y que contiene 20.920.102 filas. Con estas cifras, alguna de las combinaciones de criterios incluidas en el prototipo da lugar a tiempos de respuesta excesivos y la consulta puede arrojar como resultado un "time out". Por ello es preciso seguir avanzando, tanto en la utilización de herramientas más potentes como en la mejora de los algoritmos utilizados en los cálculos.</p>
+<p align='justify'>De momento en la web de VIBIDA (<a href="http://vibida.unizar.es/">http://vibida.unizar.es/</a>) existen datos de administraciones locales hasta el periodo 2012, a la espera de que salgan los datos de liquidación definitivos de 2013. Se seguirá alimentando con datos la página, con la limitación del tiempo que tarde el ministerio en publicar las cuentas, en consecuencia, la >a href="http://vibida.unizar.es/datos_acum_periodo/">URL</a> con ficheros <i>zip</i> también actualizará su contenido (utilizar siempre el más reciente).</p>
 
 <a href="http://labje.unizar.es/"> <img align="right" src="http://labje.unizar.es/sites/default/files/LabJE.png" id="logo" /></a>

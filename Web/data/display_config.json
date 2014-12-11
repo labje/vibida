@@ -1,0 +1,8 @@
+{
+"section0": {"name":"Mapa","options":[1,2,3,4,5,6,7,8,9,10]},
+"section1": {"name":"Indicadores","slides":[["indicador1","indicador2","indicador3"],["indicador4","indicador5","indicador6"],["indicador7","indicador8","indicador9","indicador10"]]},
+"section2": {"name":"Ingresos y gastos","slides":[["treemap"],["hbars"]]},
+"section3": {"name":"Comparar indicadores","slides":[["indicador1","indicador2","indicador3"],["indicador4","indicador5","indicador6"],["indicador7","indicador8","indicador9","indicador10"]]},
+"section4": {"name":"Servicios","slides":[["servicio1","servicio2","servicio3"],["servicio4","servicio5","servicio6"],["servicio7","servicio8","servicio9"]]},
+"section5": {"name":"Relacion","options":[1,2,3,4,5,6,7,8,9,10,11,12,13]}
+}

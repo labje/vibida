@@ -5,60 +5,51 @@ import xml.etree.ElementTree as ET
 from operator import itemgetter
 
 NS = {
-	"xlink":"http://www.w3.org/1999/xlink",
-	"lenloc2-anexo2":"http://www.meh.es/taxonomias/lenloc2-anexo2",
-	"xsi":"http://www.w3.org/2001/XMLSchema-instance",
 	"iso4217":"http://www.xbrl.org/2003/iso4217",
-	"lenloc2-onp-importes":"http://www.meh.es/taxonomias/lenloc2-onp-importes",
-	"lenloc2-exist":"http://www.meh.es/taxonomias/lenloc2-exist",
-	"xbrli":"http://www.xbrl.org/2003/instance",
-	"lenloc2-prog":"http://www.meh.es/taxonomias/lenloc2-prog",
-	"lenloc2-anexo5":"http://www.meh.es/taxonomias/lenloc2-anexo5",
-	"lenloc2-econ-gast-abierta":"http://www.meh.es/taxonomias/lenloc2-econ-gast-abierta",
-	"lenloc2-prog-abierta":"http://www.meh.es/taxonomias/lenloc2-prog-abierta",
-	"lenloc2-econ-ingr-importes":"http://www.meh.es/taxonomias/lenloc2-econ-ingr-importes",
-	"lenloc2-prog-cuentas-econ-cruzadas":"http://www.meh.es/taxonomias/lenloc2-prog-cuentas-econ-cruzadas",
-	"lenloc2-anexo1":"http://www.meh.es/taxonomias/lenloc2-anexo1",
-	"lenloc2-prog-cuentas":"http://www.meh.es/taxonomias/lenloc2-prog-cuentas",
-	"lenloc2-econ-gast":"http://www.meh.es/taxonomias/lenloc2-econ-gast",
-	"lenloc2-onp-deudores-acreedores":"http://www.meh.es/taxonomias/lenloc2-onp-deudores-acreedores",
-	"lenloc2-anexo4":"http://www.meh.es/taxonomias/lenloc2-anexo4",
-	"lenloc2-econ-gast-cuentas":"http://www.meh.es/taxonomias/lenloc2-econ-gast-cuentas",
-	"lenloc2-econ-ingr-cuentas":"http://www.meh.es/taxonomias/lenloc2-econ-ingr-cuentas",
-	"lenloc2-onp":"http://www.meh.es/taxonomias/lenloc2-onp",
-	"lenloc2-econ-ingr-abierta":"http://www.meh.es/taxonomias/lenloc2-econ-ingr-abierta",
-	"lenloc2-econ-gast-importes":"http://www.meh.es/taxonomias/lenloc2-econ-gast-importes",
-	"xbrldt":"http://xbrl.org/2005/xbrldt",
-	"lenloc2":"http://www.meh.es/taxonomias/lenloc2",
-	"lenloc2-anexo3":"http://www.meh.es/taxonomias/lenloc2-anexo3",
-	"xbrldi":"http://xbrl.org/2006/xbrldi",
-	"lenloc2-econ-ingr":"http://www.meh.es/taxonomias/lenloc2-econ-ingr",
+	"lenloc3":"http://www.meh.es/taxonomias/lenloc3",
+	"lenloc3-anexo1":"http://www.meh.es/taxonomias/lenloc3-anexo1",
+	"lenloc3-anexo3":"http://www.meh.es/taxonomias/lenloc3-anexo3",
+	"lenloc3-anexo5":"http://www.meh.es/taxonomias/lenloc3-anexo5",
+	"lenloc3-econ-gast":"http://www.meh.es/taxonomias/lenloc3-econ-gast",
+	"lenloc3-econ-gast-cuentas":"http://www.meh.es/taxonomias/lenloc3-econ-gast-cuentas",
+	"lenloc3-econ-gast-importes":"http://www.meh.es/taxonomias/lenloc3-econ-gast-importes",
+	"lenloc3-econ-ingr":"http://www.meh.es/taxonomias/lenloc3-econ-ingr",
+	"lenloc3-econ-ingr-cuentas":"http://www.meh.es/taxonomias/lenloc3-econ-ingr-cuentas",
+	"lenloc3-econ-ingr-importes":"http://www.meh.es/taxonomias/lenloc3-econ-ingr-importes",
+	"lenloc3-prog":"http://www.meh.es/taxonomias/lenloc3-prog",
+	"lenloc3-prog-cuentas":"http://www.meh.es/taxonomias/lenloc3-prog-cuentas",
+	"lenloc3-prog-cuentas-econ-cruzadas":"http://www.meh.es/taxonomias/lenloc3-prog-cuentas-econ-cruzadas",
+	"lenloc3-ref":"http://www.meh.es/taxonomias/lenloc3-ref",
+	"lenloc3-remt":"http://www.meh.es/taxonomias/lenloc3-remt",
+	"lenloc3-resultp":"http://www.meh.es/taxonomias/lenloc3-resultp",
 	"link":"http://www.xbrl.org/2003/linkbase",
-	"lenloc2-resultp":"http://www.meh.es/taxonomias/lenloc2-resultp",
-	"lenloc2-ref":"http://www.meh.es/taxonomias/lenloc2-ref",
-	"lenloc2-remt":"http://www.meh.es/taxonomias/lenloc2-remt",
-	"penloc2-prog-cuentas-econ-cruzadas":"http://www.meh.es/taxonomias/penloc2-prog-cuentas-econ-cruzadas",
-	"penloc2-econ-ingr-importes":"http://www.meh.es/taxonomias/penloc2-econ-ingr-importes",
-	"penloc2-prog-abierta":"http://www.meh.es/taxonomias/penloc2-prog-abierta",
-	"penloc2-ref":"http://www.meh.es/taxonomias/penloc2-ref",
-	"penloc2-prog-cuentas":"http://www.meh.es/taxonomias/penloc2-prog-cuentas",
-	"penloc2-econ-gast-cuentas":"http://www.meh.es/taxonomias/penloc2-econ-gast-cuentas",
+	"penloc2-econ-gast":"http://www.meh.es/taxonomias/penloc2-econ-gast",
 	"penloc2-econ-gast-abierta":"http://www.meh.es/taxonomias/penloc2-econ-gast-abierta",
-	"penloc2-econ-ingr":"http://www.meh.es/taxonomias/penloc2-econ-ingr",
-	"penloc2-prog":"http://www.meh.es/taxonomias/penloc2-prog",
-	"penloc2-econ-ingr-cuentas":"http://www.meh.es/taxonomias/penloc2-econ-ingr-cuentas",
-	"penloc2-ord":"http://www.meh.es/taxonomias/penloc2-ord",
-	"penloc2-econ-ingr-abierta":"http://www.meh.es/taxonomias/penloc2-econ-ingr-abierta",
+	"penloc2-econ-gast-cuentas":"http://www.meh.es/taxonomias/penloc2-econ-gast-cuentas",
 	"penloc2-econ-gast-importes":"http://www.meh.es/taxonomias/penloc2-econ-gast-importes",
-	"penloc2-econ-gast":"http://www.meh.es/taxonomias/penloc2-econ-gast"
+	"penloc2-econ-ingr":"http://www.meh.es/taxonomias/penloc2-econ-ingr",
+	"penloc2-econ-ingr-abierta":"http://www.meh.es/taxonomias/penloc2-econ-ingr-abierta",
+	"penloc2-econ-ingr-cuentas":"http://www.meh.es/taxonomias/penloc2-econ-ingr-cuentas",
+	"penloc2-econ-ingr-importes":"http://www.meh.es/taxonomias/penloc2-econ-ingr-importes",
+	"penloc2-ord":"http://www.meh.es/taxonomias/penloc2-ord",
+	"penloc2-prog":"http://www.meh.es/taxonomias/penloc2-prog",
+	"penloc2-prog-abierta":"http://www.meh.es/taxonomias/penloc2-prog-abierta",
+	"penloc2-prog-cuentas":"http://www.meh.es/taxonomias/penloc2-prog-cuentas",
+	"penloc2-prog-cuentas-econ-cruzadas":"http://www.meh.es/taxonomias/penloc2-prog-cuentas-econ-cruzadas",
+	"penloc2-ref":"http://www.meh.es/taxonomias/penloc2-ref",
+	"xbrldi":"http://xbrl.org/2006/xbrldi",
+	"xbrldt":"http://xbrl.org/2005/xbrldt",
+	"xbrli":"http://www.xbrl.org/2003/instance",
+	"xlink":"http://www.w3.org/1999/xlink",
+	"xsi":"http://www.w3.org/2001/XMLSchema-instance"
 	}
 
 context_prefix = {
-	"L_PR": "lenloc2-econ-gast-cuentas",
+	"L_PR": "lenloc3-econ-gast-cuentas",
 	"P_PR": "penloc2-econ-gast-cuentas"
 } 
 label_prefix = {
-	"L_PR": "lenloc2-prog-cuentas",
+	"L_PR": "lenloc3-prog-cuentas",
 	"P_PR": "penloc2-prog-cuentas"
 }
 h_label = {
@@ -119,13 +110,13 @@ def xml_parser_csv(pre, x_importes, x_labels):
 	csv_file = x_la_name.split('.')[0] + '.csv'
 	writer = csv.writer(open(csv_file, 'wb'), delimiter=",")
 	writer.writerow(header)
+	# result.append(header)
 	for row in labels:
 		# writer.writerow([pre, row['id'], row['Cuenta'], row['label']]+contextos)
 		result.append([pre, row['id'], row['Cuenta'], row['label']]+contextos)
 
 	sortedList = sorted(result, cmp=lambda x,y: cmp(x.lower(), y.lower()), key=itemgetter(header.index("id")))
 	writer.writerows(sortedList)
-
 
 def main():
 	if len(sys.argv) < 4:

@@ -9,12 +9,19 @@ def merge(d1, d2):
 	writer = csv.writer(open(w_name, "wb"), delimiter=',')
 
 	lista2 = list(data2)
+	delay = 0
 	for indice, row in enumerate(data1):
 		if indice == 0: #cabecera
 			writer.writerow(row[:5] + ["contexto_lenloc", "contexto_penloc"])
-		else:
-			if row[6] != "" or lista2[indice][5] != "":
-				writer.writerow(["LP_" + row[0].split("_")[-1]] + row[1:5] + [row[6], lista2[indice][5]])
+		else: #resto de rows
+			if row[3] == lista2[indice+delay][3]: #mismo id
+				if row[6] != "" or lista2[indice+delay][5] != "":
+					writer.writerow(["LP_" + row[0].split("_")[-1]] + row[1:5] + [row[6], lista2[indice+delay][5]])
+			else: # en principio solo puede tener liquidación mas cuentas (lenloc3 cuenta 5)
+				delay = delay - 1
+				if row[6] != "":
+					writer.writerow(["LP_" + row[0].split("_")[-1]] + row[1:5] + [row[6], ''])
+
 
 def alone(d1, pre):
 	data1 = csv.reader(open(d1, "rb"), delimiter=',') #Liquidación o Presupuesto

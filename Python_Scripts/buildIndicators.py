@@ -30,7 +30,7 @@ def main(d1, d2, js):
 
 	for index, row in enumerate(csv1):
 		if index == 0: 
-			i_entidad = row["entidad"]
+			i_entidad = d1.split('_')[3]#row["entidad"]
 			i_periodo = row["periodo"]
 		if len(row["id"]) == 1 and row["Lenloc_context1"] != "": #Capitulo y campo de derechos no vacio
 			ingresos[row["id"]] = float(row["Lenloc_context1"])
@@ -39,7 +39,7 @@ def main(d1, d2, js):
 
 	for index, row in enumerate(csv2):
 		if index == 0: 
-			g_entidad = row["entidad"]
+			g_entidad = d2.split('_')[3]#row["entidad"]
 			g_periodo = row["periodo"]
 		if len(row["id"]) == 1 and row["Lenloc_context1"] != "": #Capitulo y campo de derechos no vacio
 			gastos[row["id"]] = float(row["Lenloc_context1"])

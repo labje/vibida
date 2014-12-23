@@ -33,12 +33,12 @@ def main(d1, js):
 
 	for index, row in enumerate(csv1):
 		if index == 0: 
-			entidad = row["entidad"]
+			entidad = d1.split('_')[3]#row["entidad"]
 			periodo = row["periodo"]
 		if row["id"] in services: #dentro de la info de servicio a recoger
-			print row["id"]
+			# print row["id"]
 			programa[row["id"]] = {"cuenta": row["cuenta"], "val": sum([float(row[e]) for e in row if row[e] != "" and e.startswith("Lenloc_context")])}
-			print row["id"], programa[row["id"]]["val"]
+			# print row["id"], programa[row["id"]]["val"]
 
 	
 	if periodo != str(js1["periodo"]):

@@ -5,48 +5,39 @@ import xml.etree.ElementTree as ET
 from operator import itemgetter
 
 NS = {
-	"xlink":"http://www.w3.org/1999/xlink",
-	"lenloc2-anexo2":"http://www.meh.es/taxonomias/lenloc2-anexo2",
-	"xsi":"http://www.w3.org/2001/XMLSchema-instance",
 	"iso4217":"http://www.xbrl.org/2003/iso4217",
-	"lenloc2-onp-importes":"http://www.meh.es/taxonomias/lenloc2-onp-importes",
-	"lenloc2-exist":"http://www.meh.es/taxonomias/lenloc2-exist",
-	"xbrli":"http://www.xbrl.org/2003/instance",
-	"lenloc2-prog":"http://www.meh.es/taxonomias/lenloc2-prog",
-	"lenloc2-anexo5":"http://www.meh.es/taxonomias/lenloc2-anexo5",
-	"lenloc2-econ-gast-abierta":"http://www.meh.es/taxonomias/lenloc2-econ-gast-abierta",
-	"lenloc2-prog-abierta":"http://www.meh.es/taxonomias/lenloc2-prog-abierta",
-	"lenloc2-econ-ingr-importes":"http://www.meh.es/taxonomias/lenloc2-econ-ingr-importes",
-	"lenloc2-prog-cuentas-econ-cruzadas":"http://www.meh.es/taxonomias/lenloc2-prog-cuentas-econ-cruzadas",
-	"lenloc2-anexo1":"http://www.meh.es/taxonomias/lenloc2-anexo1",
-	"lenloc2-prog-cuentas":"http://www.meh.es/taxonomias/lenloc2-prog-cuentas",
-	"lenloc2-econ-gast":"http://www.meh.es/taxonomias/lenloc2-econ-gast",
-	"lenloc2-onp-deudores-acreedores":"http://www.meh.es/taxonomias/lenloc2-onp-deudores-acreedores",
-	"lenloc2-anexo4":"http://www.meh.es/taxonomias/lenloc2-anexo4",
-	"lenloc2-econ-gast-cuentas":"http://www.meh.es/taxonomias/lenloc2-econ-gast-cuentas",
-	"lenloc2-econ-ingr-cuentas":"http://www.meh.es/taxonomias/lenloc2-econ-ingr-cuentas",
-	"lenloc2-onp":"http://www.meh.es/taxonomias/lenloc2-onp",
-	"lenloc2-econ-ingr-abierta":"http://www.meh.es/taxonomias/lenloc2-econ-ingr-abierta",
-	"lenloc2-econ-gast-importes":"http://www.meh.es/taxonomias/lenloc2-econ-gast-importes",
-	"xbrldt":"http://xbrl.org/2005/xbrldt",
-	"lenloc2":"http://www.meh.es/taxonomias/lenloc2",
-	"lenloc2-anexo3":"http://www.meh.es/taxonomias/lenloc2-anexo3",
-	"xbrldi":"http://xbrl.org/2006/xbrldi",
-	"lenloc2-econ-ingr":"http://www.meh.es/taxonomias/lenloc2-econ-ingr",
+	"lenloc3":"http://www.meh.es/taxonomias/lenloc3",
+	"lenloc3-anexo1":"http://www.meh.es/taxonomias/lenloc3-anexo1",
+	"lenloc3-anexo3":"http://www.meh.es/taxonomias/lenloc3-anexo3",
+	"lenloc3-anexo5":"http://www.meh.es/taxonomias/lenloc3-anexo5",
+	"lenloc3-econ-gast":"http://www.meh.es/taxonomias/lenloc3-econ-gast",
+	"lenloc3-econ-gast-cuentas":"http://www.meh.es/taxonomias/lenloc3-econ-gast-cuentas",
+	"lenloc3-econ-gast-importes":"http://www.meh.es/taxonomias/lenloc3-econ-gast-importes",
+	"lenloc3-econ-ingr":"http://www.meh.es/taxonomias/lenloc3-econ-ingr",
+	"lenloc3-econ-ingr-cuentas":"http://www.meh.es/taxonomias/lenloc3-econ-ingr-cuentas",
+	"lenloc3-econ-ingr-importes":"http://www.meh.es/taxonomias/lenloc3-econ-ingr-importes",
+	"lenloc3-prog":"http://www.meh.es/taxonomias/lenloc3-prog",
+	"lenloc3-prog-cuentas":"http://www.meh.es/taxonomias/lenloc3-prog-cuentas",
+	"lenloc3-prog-cuentas-econ-cruzadas":"http://www.meh.es/taxonomias/lenloc3-prog-cuentas-econ-cruzadas",
+	"lenloc3-ref":"http://www.meh.es/taxonomias/lenloc3-ref",
+	"lenloc3-remt":"http://www.meh.es/taxonomias/lenloc3-remt",
+	"lenloc3-resultp":"http://www.meh.es/taxonomias/lenloc3-resultp",
 	"link":"http://www.xbrl.org/2003/linkbase",
-	"lenloc2-resultp":"http://www.meh.es/taxonomias/lenloc2-resultp",
-	"lenloc2-ref":"http://www.meh.es/taxonomias/lenloc2-ref",
-	"lenloc2-remt":"http://www.meh.es/taxonomias/lenloc2-remt"
+	"xbrldi":"http://xbrl.org/2006/xbrldi",
+	"xbrldt":"http://xbrl.org/2005/xbrldt",
+	"xbrli":"http://www.xbrl.org/2003/instance",
+	"xlink":"http://www.w3.org/1999/xlink",
+	"xsi":"http://www.w3.org/2001/XMLSchema-instance"
 	}
 
 context_prefix = {
-	"L_G": "lenloc2-econ-gast-importes",
-	"L_I": "lenloc2-econ-ingr-importes"
+	"L_G": "lenloc3-econ-gast-importes",
+	"L_I": "lenloc3-econ-ingr-importes"
 }
 
 label_prefix = {
-	"L_G": "lenloc2-econ-gast-cuentas",
-	"L_I": "lenloc2-econ-ingr-cuentas"
+	"L_G": "lenloc3-econ-gast-cuentas",
+	"L_I": "lenloc3-econ-ingr-cuentas"
 }
 
 def xml_parser_csv(pre, x_importes, x_labels):
@@ -65,7 +56,8 @@ def xml_parser_csv(pre, x_importes, x_labels):
 	for definition in root.iter(tag='{'+NS["link"]+'}definitionArc'):
 		# if definition.get('{'+NS["xlink"]+'}from') == 'EconomicaGastos':
 		contextos.append(context_prefix[pre] + ':' + definition.get('{'+NS["xlink"]+'}to'))
-
+	contextos = contextos[1:]+[contextos[0]]
+	
 	#Segundo se recorre el XBRL de labels para ir formando el CSV query correspondiente
 	try:
 		tree = ET.parse(x_labels)
@@ -128,7 +120,7 @@ if __name__ == "__main__":
 
 #Un ejemplo de ejecución sería:
 #	python lenlocGastIngrMap.py lenloc2-econ-gast-importes-definition.xml lenloc2-econ-gast-cuentas-label.xml L_G
-#	python lenlocGastIngrMap.py lenloc2-econ-ingr-importes-definition.xml lenloc2-econ-ingr-cuentas-label.xml L_I
+#	python lenlocGastIngrMap.py lenloc3-econ-ingr-importes-definition.xml lenloc3-econ-ingr-cuentas-label.xml L_I
 
 
 #Hay un pequeño error en igresos pero es por el XML de labels donde nombre nombra "TransferenciaCorrientes" en vez

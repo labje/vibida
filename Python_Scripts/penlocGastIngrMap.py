@@ -2,6 +2,7 @@
 
 import csv, sys
 import xml.etree.ElementTree as ET
+from operator import itemgetter
 
 NS = {
 	"xlink":"http://www.w3.org/1999/xlink",
@@ -90,6 +91,7 @@ def xml_parser_csv(pre, x_importes, x_labels):
 				else:
 					r = {}
 
+	result = []
 	header = ['pre','id','Cuenta','Penloc_Label']
 	for index, con in enumerate(contextos):
 		header.append('Penloc_context' + str(index))
@@ -97,7 +99,11 @@ def xml_parser_csv(pre, x_importes, x_labels):
 	writer = csv.writer(open(csv_file, 'wb'), delimiter=",")
 	writer.writerow(header)
 	for row in labels:
-		writer.writerow([pre, row['id'], row['Cuenta'], row['label']]+contextos)
+		# writer.writerow([pre, row['id'], row['Cuenta'], row['label']]+contextos)
+		result.append([pre, row['id'], row['Cuenta'], row['label']]+contextos)
+	
+	sortedList = sorted(result, cmp=lambda x,y: cmp(x.lower(), y.lower()), key=itemgetter(header.index("id")))
+	writer.writerows(sortedList)
 
 
 def main():

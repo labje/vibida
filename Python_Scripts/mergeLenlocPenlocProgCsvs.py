@@ -14,8 +14,9 @@ def merge(d1, d2):
 	lista2 = list(data2)
 	for indice, row in enumerate(data1):
 		if indice == 0: #cabecera
-			contextos = len(row) - 5
-			writer.writerow(row[:5] + ["contexto_lenloc" + str(n) for n in range(contextos)] + ["contexto_penloc" + str(n) for n in range(contextos)])
+			contextos_lenloc = len(row) - 5
+			contextos_penloc = len(lista2[indice]) - 5
+			writer.writerow(row[:5] + ["contexto_lenloc" + str(n) for n in range(contextos_lenloc)] + ["contexto_penloc" + str(n) for n in range(contextos_penloc)])
 		else:
 			if isNotEmpty(row[5:]) or isNotEmpty(lista2[indice][5:]):
 				writer.writerow(["LP_" + row[0].split("_")[-1]] + row[1:] + lista2[indice][5:])

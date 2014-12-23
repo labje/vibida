@@ -43,6 +43,14 @@
 			margin: 10px 0px;
 		}
 
+		section.contenido ol {
+			margin: 10px 20px;
+		}
+
+		section.contenido ol li{
+			margin: 10px 0px;
+		}
+
 		article {
 			margin: 30px 0px;
 		}
@@ -62,6 +70,10 @@
 		a {
 			text-decoration: none;
 		}
+
+		article ul {
+			margin-left: 40px;
+		}
 	</style>
 </head>
 <body>
@@ -77,6 +89,22 @@
 			<article><p>
 				La herramienta, que se considera desarrollada a nivel de prototipo, permite la visualización de datos de las Administraciones locales españolas, a partir de ficheros en formato XBRL proporcionados por el Ministerio de Economía y Hacienda. Se pueden visualizar los datos disponibles hasta la fecha, que corresponden a 2010, 2011 y 2012, pero como se utiliza un formato estándar es posible incorporar nueva información de forma sencilla. El software es de uso libre y está licenciado bajo licencia Creative Commons reconocimiento v.3. Puede accederse al mismo y a la correspondiente documentación técnica en <a href="https://github.com/labje/vibida">https://github.com/labje/vibida</a>. Para ponerse en contacto con los desarrolladores del proyecto puede enviar un correo electrónico a jfm@unizar.es.
 			</p></article>
+
+			<article>
+				<h3>Formas de utilizar la página VIBIDA:</h3>
+				<ol>
+					<li>Enlazar con <a href="http://vibida.unizar.es/">vibida.unizar.es</a>, pasando como parámetro el código de la entidad local en la propia URL de la web (ej. http://vibida.unizar.es/<b>?50000DD00</b>). En este caso en el selector de la cabecera aparece ya seleccionada la entidad.</li>
+					<li>
+						Reutilizar la aplicación. En este caso la entidad tiene una instancia de la aplicación que puede utilizar y modificar libremente. En particular, puede:
+						<ol type="a">
+							<li>Personalizar la página poniendo su escudo, colores institucionales, etc. Únicamente deben conservarse (aunque puede reducirse su tamaño) los logotipos del Ministerio y del Gobierno de Aragón, ya que son quienes han subvencionado el desarrollo.</li>
+							<li>Incorporar los datos de la entidad mediante los ficheros LENLOC y PENLOC. Los datos del conjunto de las entidades de España podrán descargarse ya en formato adecuado, del sitio VIBIDA.</li>
+							<li>Seleccionar que secciones y que indicadores quiere que se visualicen.</li>
+						</ol>
+					</li>
+				</ol>
+				<p>Un explicación más detallada de la reutilización de la aplicación viene detallada en el siguiente documento: <a href="http://vibida.unizar.es/documentacion/Formas de utilizar la aplicación VIBIDA.pdf">Formas de utilizar la aplicación VIBIDA</a></p>
+				</article>
 
 			<article><p>
 				En la herramienta se reflejan los tres ejes en torno a los cuales se ha articulado el proyecto VIBIDA y que son los siguientes:
@@ -102,6 +130,10 @@
 					El prototipo permite comprobar la utilidad de las herramientas "big data" a la hora de permitir que los ciudadanos actúen de forma interactiva con grandes volúmenes de datos, sin que la información a la que acceden quede restringida a un conjunto de cálculos estadísticas y graficas previamente elaborados. La implementación realizada en el prototipo permite realizar el cálculo de la correlación de los distintos indicadores entre sí y con otros tres factores: la población, los ingresos y los gastos. Los datos de las más de 8000 entidades locales se almacenan en una única tabla, cuyo tamaño es de 4,30 GB y que contiene 20.920.102 filas. Con estas cifras, alguna de las combinaciones de criterios incluidas en el prototipo da lugar a tiempos de respuesta excesivos y la consulta puede arrojar como resultado un "time out". Por ello es preciso seguir avanzando, tanto en la utilización de herramientas más potentes como en la mejora de los algoritmos utilizados en los cálculos.
 				</p>
 			</div>
+			</article>
+			<article>
+				<p>Para acceder a documentación adicional del proyecto VIBIDA se puede acudir al siguiente enlace:</p>
+				<ul><li><a href="http://vibida.unizar.es/documentacion/">http://vibida.unizar.es/documentacion/</a></li></ul>
 			</article>
 		</section>
 		<footer>Proyecto VIBIDA 2014</footer>

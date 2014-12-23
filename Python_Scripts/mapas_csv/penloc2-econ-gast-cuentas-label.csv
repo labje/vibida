@@ -32,6 +32,14 @@ P_G,121.01,Complemento específico,penloc2-econ-gast-cuentas:ComplementoEspecifi
 P_G,121.03,Otros complementos,penloc2-econ-gast-cuentas:OtrosComplementos,penloc2-econ-gast-importes:PrevisionInicial
 P_G,122,Retribuciones en especie,penloc2-econ-gast-cuentas:PersonalFuncionario_RetribucionesEnEspecie,penloc2-econ-gast-importes:PrevisionInicial
 P_G,124,Retribuciones de funcionarios en prácticas,penloc2-econ-gast-cuentas:RetribucionesDeFuncionariosEnPracticas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.00,Sueldos del Grupo A1,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoA1,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.01,Sueldos del Grupo A2,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoA2,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.02,Sueldos del Grupo B,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoB,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.03,Sueldos del Grupo C1,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoC1,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.04,Sueldos del Grupo C2,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoC2,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.05,Sueldos del Grupo E,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoE,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.06,Trienios,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_Trienios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.09,Otras retribuciones básicas,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_OtrasRetribucionesBasicas,penloc2-econ-gast-importes:PrevisionInicial
 P_G,127,Contribuciones a planes y fondos de pensiones,penloc2-econ-gast-cuentas:PersonalFuncionario_ContribucionesAPlanesYFondosDePensiones,penloc2-econ-gast-importes:PrevisionInicial
 P_G,13,Personal Laboral,penloc2-econ-gast-cuentas:PersonalLaboral,penloc2-econ-gast-importes:PrevisionInicial
 P_G,130,Laboral Fijo,penloc2-econ-gast-cuentas:LaboralFijo,penloc2-econ-gast-importes:PrevisionInicial
@@ -359,11 +367,3 @@ P_G,931,Amortización de préstamos en moneda distinta del euro a largo plazo,pe
 P_G,94,Devolución de depósitos y fianzas,penloc2-econ-gast-cuentas:DevolucionDeDepositosYFianzas,penloc2-econ-gast-importes:PrevisionInicial
 P_G,940,Devolución de depósitos,penloc2-econ-gast-cuentas:EconomicaGastos_PasivosFinancieros_DevolucionDeDepositosYFianzas_DevolucionDeDepositos,penloc2-econ-gast-importes:PrevisionInicial
 P_G,941,Devolución de fianzas,penloc2-econ-gast-cuentas:EconomicaGastos_PasivosFinancieros_DevolucionDeDepositosYFianzas_DevolucionDeFianzas,penloc2-econ-gast-importes:PrevisionInicial
-P_G,124.00,Sueldos del Grupo A1,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoA1,penloc2-econ-gast-importes:PrevisionInicial
-P_G,124.01,Sueldos del Grupo A2,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoA2,penloc2-econ-gast-importes:PrevisionInicial
-P_G,124.02,Sueldos del Grupo B,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoB,penloc2-econ-gast-importes:PrevisionInicial
-P_G,124.03,Sueldos del Grupo C1,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoC1,penloc2-econ-gast-importes:PrevisionInicial
-P_G,124.04,Sueldos del Grupo C2,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoC2,penloc2-econ-gast-importes:PrevisionInicial
-P_G,124.05,Sueldos del Grupo E,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoE,penloc2-econ-gast-importes:PrevisionInicial
-P_G,124.06,Trienios,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_Trienios,penloc2-econ-gast-importes:PrevisionInicial
-P_G,124.09,Otras retribuciones básicas,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_OtrasRetribucionesBasicas,penloc2-econ-gast-importes:PrevisionInicial

@@ -4,12 +4,32 @@
 
 <p align='justify'>La herramienta, que se considera desarrollada a nivel de prototipo, permite la visualización de datos de las Administraciones locales españolas, a partir de ficheros en formato XBRL proporcionados por el Ministerio de Economía y Hacienda. Se pueden visualizar los datos disponibles hasta la fecha, que corresponden a 2010, 2011 y 2012, pero como se utiliza un formato estándar es posible incorporar nueva información de forma sencilla. El software es de uso libre y está licenciado bajo licencia Creative Commons reconocimiento v.3. Para ponerse en contacto con los desarrolladores del proyecto puede enviar un correo electrónico a jfm@unizar.es.</p>
 
+
+<h4>Formas de utilizar la página VIBIDA:</h4>
+<ol>
+<li>Enlazar con <a href="http://vibida.unizar.es/">vibida.unizar.es</a>, pasando como parámetro el código de la entidad local en la propia URL de la web (ej. http://vibida.unizar.es/?50000DD00). En este caso en el selector de la cabecera aparece ya seleccionada la entidad.</li>
+<li>Reutilizar la aplicación. En este caso la entidad tiene una instancia de la aplicación que puede utilizar y modificar libremente. En particular, puede:
+  <ol type="a">
+  <li>Personalizar la página poniendo su escudo, colores institucionales, etc. Únicamente deben conservarse (aunque puede reducirse su tamaño) los logotipos del Ministerio y del Gobierno de Aragón, ya que son quienes han subvencionado el desarrollo.</li>
+     <li>Incorporar los datos de la entidad mediante los ficheros LENLOC y PENLOC. Los datos del conjunto de las entidades de España podrán descargarse ya en formato adecuado, del sitio VIBIDA.</li>
+    <li>Seleccionar que secciones y que indicadores quiere que se visualicen.</li>
+    </ol>
+  </li>
+</ol>
+
+<p align='justify'>Un explicación más detallada de la reutilización de la aplicación viene detallada en el fichero pdf <b>"Formas de utilizar la aplicación VIBIDA.pdf"</b> del repositorio, esta información también esta disponible en el siguiente enlace:</p>
+<ul><li><a href="http://vibida.unizar.es/documentacion/Formas de utilizar la aplicación VIBIDA.pdf">Formas de utilizar la aplicación VIBIDA</a></li></ul>
+
+
 <p align='justify'>En la herramienta se reflejan los tres ejes en torno a los cuales se ha articulado el proyecto VIBIDA y que son los siguientes:</p>
 <ul>
-<li><h4>Utilización de estándares basados en XBRL</h4></li>
-<li><h4>Visualización de los datos</h4></li>
-<li><h4>Utilización de herramientas para datos masivos (<i>big data</i>)</h4></li>
+<li><b>Utilización de estándares basados en XBRL</b></li>
+<li><b>Visualización de los datos</b></li>
+<li><b>Utilización de herramientas para datos masivos (<i>big data</i>)</b></li>
 </ul>
+
+<p align='justify'>Para acceder a documentación adicional del proyecto VIBIDA se puede acudir al siguiente enlace:</p>
+<ul><li><a href="http://vibida.unizar.es/documentacion/">http://vibida.unizar.es/documentacion/</a></li></ul>
 =======================================================
 <h2>Instalacion de aplicación web</h2>
 <h4>Requisitos máquina donde se hospeda la aplicación:</h4>

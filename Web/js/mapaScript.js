@@ -123,7 +123,8 @@ var divisionLayer;
 var tableIds = {
   '2010':{'DIP':'13bzW4267LOC3gwpGgrKgn_Fv1_qz-Uy8P8t3QH7f','MUN':'1X17Pu45qLOc2PDIdk1AVb6DcmhQIpvmOkwevx-Lu'},
   '2011':{'DIP':'1kgSkmJEHk535JOgLRdIU6SlqWzQSFBeWJBuQg4Mu','MUN':'1jXUs_pGwAYfGxSOekAKCQKyQxAn7OuF0I0NQ9gq8'},
-  '2012':{'DIP':'1vjFerI89azGUI-p8v8cqWOzgSm8wUMcsZQEzV0lF','MUN':'1BxB9yvSccXK85Et-5d6ca48msrl-rOf9DKANh0IO'}
+  '2012':{'DIP':'1vjFerI89azGUI-p8v8cqWOzgSm8wUMcsZQEzV0lF','MUN':'1BxB9yvSccXK85Et-5d6ca48msrl-rOf9DKANh0IO'},
+  '2013':{'DIP':'1wT-nT3GM2rY6CeRVe60xVB0ArsU9PPHK-2hrKWYO','MUN':'1dYVfofoPvpj4DTlZMvzkl0qfgjZSsSPs6oRxvMiQ'}
 }
 
 //Función que crea e iniciliza el mapa
@@ -145,7 +146,7 @@ function initializeMap() {
   divisionLayer = new google.maps.FusionTablesLayer({
       query: {
         select: 'geometry',
-        from: '1vjFerI89azGUI-p8v8cqWOzgSm8wUMcsZQEzV0lF',
+        from: '1wT-nT3GM2rY6CeRVe60xVB0ArsU9PPHK-2hrKWYO',
       },
       suppressInfoWindows: 'true'
   });

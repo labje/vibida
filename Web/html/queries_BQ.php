@@ -53,7 +53,8 @@
   $minR2 = (!empty($_POST)) ? $_POST["minR2"] : 0.3;
   
   //Se define la tabla a la que se accedera según el periodo pasado como parámetro
-  $tabla = ($periodo == '2012') ? 'FROM XBRL_SET.spainLiqPreData2012 ' : 'FROM XBRL_SET.spainLiqPreData2010_2011 ';
+  $tabla = ($periodo == '2013') ? 'FROM XBRL_SET.spainLiqPreData2013 ' :
+		  (($periodo == '2012') ? 'FROM XBRL_SET.spainLiqPreData2012 ' : 'FROM XBRL_SET.spainLiqPreData2010_2011 ');
 
   //Se definen condiciones de rango y población 
   $cond_rango = ($rango == 'DIP') ? 'codigo_entidad contains "DD"': '(codigo_entidad contains "DD") = false';

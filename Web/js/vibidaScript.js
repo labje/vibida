@@ -43,7 +43,7 @@ var munList = undefined; //variable objeto con tantas propiedades como provincia
 //variable que contendra la información sobre el periodo actual y para cada indicador
 //su valor mínimo, máximo, primer y tercer cuartil, percentil 5 y 95 y la mediana.
 currentIndicatorLimits = {
-  periodo:2012, 
+  periodo:period_limit, 
   1:{min:0,max:100,q1:25,q3:75,p5:5,p95:95,med:50},
   2:{min:0,max:100,q1:25,q3:75,p5:5,p95:95,med:50},
   3:{min:0,max:100,q1:25,q3:75,p5:5,p95:95,med:50},
@@ -60,7 +60,7 @@ currentIndicatorLimits = {
 //de servicio su valor mínimo, máximo, primer y tercer cuartil, percentil 5 y 95 y 
 //la mediana.
 currentCostServicesLimits = {
-  periodo:2012, 
+  periodo:period_limit, 
   15:{min:0,max:100,q1:25,q3:75,p5:5,p95:95,med:50},
   161:{min:0,max:100,q1:25,q3:75,p5:5,p95:95,med:50},
   162:{min:0,max:100,q1:25,q3:75,p5:5,p95:95,med:50},
@@ -105,7 +105,7 @@ var dashboards = {
               "servicio7":"dashboard431","servicio8":"dashboard432","servicio9":"dashboard433"}
 };
 //variable que marca el último periodo para el que se posee datos de toda España, para que todas las seccio funcionen correctamente
-var period_limit = 2012;
+var period_limit = 2013;
 
 
 /* Funciones */
@@ -892,13 +892,13 @@ function initMun(){
 }
 
 //Función que inicializa los selectores de cabecera y secciones 3 y 4.
-//Se comienza con los selectores de rango municipios y periodo 2012,
+//Se comienza con los selectores de rango municipios y periodo 'period_limit',
 //último en añadir.
 function initHeaderMenu(){
   $("select#division option[value='MUN']").prop("selected", true);
   hideDipMenu();
   showMunMenu();
-  $("select#periodo option[value='2012']").prop("selected", true);
+  $("select#periodo option[value='" + period_limit + "']").prop("selected", true);
   initDip();
   initMun();
 }
@@ -1000,7 +1000,7 @@ function arrowHover(elem, side){
 }
 
 //Función que inicializa el valor de las variables globales que poseen la información actual 
-//de limites de indicadores y gastos de servicios (inicialmente periodo 2012 y rango de municipios).
+//de limites de indicadores y gastos de servicios (inicialmente periodo "period_limit" y rango de municipios).
 //Después de actualizar las variables se crean los gráficos de las diferentes secciones, se redimensiona
 //aquellas slides que lo necesiten y se actualiza el estado de los gráficos según el valor de los selectores
 //de cabecera y cada sección.

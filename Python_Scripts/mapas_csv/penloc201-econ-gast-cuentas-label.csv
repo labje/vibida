@@ -1,0 +1,372 @@
+pre,id,Cuenta,Penloc_Label,Penloc_context0
+P_G,1,GASTOS DE PERSONAL,penloc2-econ-gast-cuentas:GastosDePersonal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,10,Órganos de gobierno y personal directivo,penloc2-econ-gast-cuentas:OrganosDeGobiernoYPersonalDirectivo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,100,Retribuciones básicas y otras remuneraciones de los miembros de los órganos de gobierno,penloc2-econ-gast-cuentas:RetribucionesBasicasYOtrasRemuneracionesDeLosMiembrosDeLosOrganosDeGobierno,penloc2-econ-gast-importes:PrevisionInicial
+P_G,100.00,Retribuciones básicas,penloc2-econ-gast-cuentas:OrganosDeGobiernoYPersonalDirectivo_RetribucionesBasicasYOtrasRemuneracionesDeLosMiembrosDeLosOrganosDeGobierno_RetribucionesBasicas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,100.01,Otras remuneraciones,penloc2-econ-gast-cuentas:OrganosDeGobiernoYPersonalDirectivo_RetribucionesBasicasYOtrasRemuneracionesDeLosMiembrosDeLosOrganosDeGobierno_OtrasRemuneraciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,101,Retribuciones básicas y otras remuneraciones del personal directivo,penloc2-econ-gast-cuentas:RetribucionesBasicasYOtrasRemuneracionesDelPersonalDirectivo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,101.00,Retribuciones básicas,penloc2-econ-gast-cuentas:OrganosDeGobiernoYPersonalDirectivo_RetribucionesBasicasYOtrasRemuneracionesDelPersonalDirectivo_RetribucionesBasicas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,101.01,Otras remuneraciones,penloc2-econ-gast-cuentas:OrganosDeGobiernoYPersonalDirectivo_RetribucionesBasicasYOtrasRemuneracionesDelPersonalDirectivo_OtrasRemuneraciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,107,Contribuciones a planes y fondos de pensiones,penloc2-econ-gast-cuentas:OrganosDeGobiernoYPersonalDirectivo_ContribucionesAPlanesYFondosDePensiones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,107.00,De los miembros de los órganos de gobierno,penloc2-econ-gast-cuentas:GastosDePersonal_OrganosDeGobiernoYPersonalDirectivo_ContribucionesAPlanesYFondosDePensiones_DeLosMiembrosDeLosOrganosDeGobierno,penloc2-econ-gast-importes:PrevisionInicial
+P_G,107.01,Del personal directivo,penloc2-econ-gast-cuentas:GastosDePersonal_OrganosDeGobiernoYPersonalDirectivo_ContribucionesAPlanesYFondosDePensiones_DelPersonalDirectivo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,11,Personal eventual,penloc2-econ-gast-cuentas:PersonalEventual,penloc2-econ-gast-importes:PrevisionInicial
+P_G,110,Retribuciones básicas y otras remuneraciones de personal eventual,penloc2-econ-gast-cuentas:RetribucionesBasicasYOtrasRemuneracionesDePersonalEventual,penloc2-econ-gast-importes:PrevisionInicial
+P_G,110.00,Retribuciones básicas,penloc2-econ-gast-cuentas:PersonalEventual_RetribucionesBasicasYOtrasRemuneracionesDePersonalEventual_RetribucionesBasicas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,110.01,Retribuciones complementarias,penloc2-econ-gast-cuentas:PersonalEventual_RetribucionesBasicasYOtrasRemuneracionesDePersonalEventual_RetribucionesComplementarias,penloc2-econ-gast-importes:PrevisionInicial
+P_G,110.02,Otras remuneraciones,penloc2-econ-gast-cuentas:PersonalEventual_RetribucionesBasicasYOtrasRemuneracionesDePersonalEventual_OtrasRemuneraciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,117,Contribuciones a planes y fondos de pensiones,penloc2-econ-gast-cuentas:PersonalEventual_ContribucionesAPlanesYFondosDePensiones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,12,Personal Funcionario,penloc2-econ-gast-cuentas:PersonalFuncionario,penloc2-econ-gast-importes:PrevisionInicial
+P_G,120,Retribuciones básicas,penloc2-econ-gast-cuentas:PersonalFuncionario_RetribucionesBasicas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,120.00,Sueldos del Grupo A1,penloc2-econ-gast-cuentas:PersonalFuncionario_SueldosDelGrupoA1,penloc2-econ-gast-importes:PrevisionInicial
+P_G,120.01,Sueldos del Grupo A2,penloc2-econ-gast-cuentas:PersonalFuncionario_SueldosDelGrupoA2,penloc2-econ-gast-importes:PrevisionInicial
+P_G,120.02,Sueldos del Grupo B,penloc2-econ-gast-cuentas:PersonalFuncionario_SueldosDelGrupoB,penloc2-econ-gast-importes:PrevisionInicial
+P_G,120.03,Sueldos del Grupo C1,penloc2-econ-gast-cuentas:PersonalFuncionario_SueldosDelGrupoC1,penloc2-econ-gast-importes:PrevisionInicial
+P_G,120.04,Sueldos del Grupo C2,penloc2-econ-gast-cuentas:PersonalFuncionario_SueldosDelGrupoC2,penloc2-econ-gast-importes:PrevisionInicial
+P_G,120.05,Sueldos del Grupo E,penloc2-econ-gast-cuentas:PersonalFuncionario_SueldosDelGrupoE,penloc2-econ-gast-importes:PrevisionInicial
+P_G,120.06,Trienios,penloc2-econ-gast-cuentas:PersonalFuncionario_Trienios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,120.09,Otras retribuciones básicas,penloc2-econ-gast-cuentas:OtrasRetribucionesBasicas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,121,Retribuciones complementarias,penloc2-econ-gast-cuentas:PersonalFuncionario_RetribucionesComplementarias,penloc2-econ-gast-importes:PrevisionInicial
+P_G,121.00,Complemento de destino,penloc2-econ-gast-cuentas:ComplementoDeDestino,penloc2-econ-gast-importes:PrevisionInicial
+P_G,121.01,Complemento específico,penloc2-econ-gast-cuentas:ComplementoEspecifico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,121.03,Otros complementos,penloc2-econ-gast-cuentas:OtrosComplementos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,122,Retribuciones en especie,penloc2-econ-gast-cuentas:PersonalFuncionario_RetribucionesEnEspecie,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124,Retribuciones de funcionarios en prácticas,penloc2-econ-gast-cuentas:RetribucionesDeFuncionariosEnPracticas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.00,Sueldos del Grupo A1,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoA1,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.01,Sueldos del Grupo A2,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoA2,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.02,Sueldos del Grupo B,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoB,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.03,Sueldos del Grupo C1,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoC1,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.04,Sueldos del Grupo C2,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoC2,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.05,Sueldos del Grupo E,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_SueldosDelGrupoE,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.06,Trienios,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_Trienios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,124.09,Otras retribuciones básicas,penloc2-econ-gast-cuentas:PersonalFuncionarioEnPracticas_OtrasRetribucionesBasicas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,127,Contribuciones a planes y fondos de pensiones,penloc2-econ-gast-cuentas:PersonalFuncionario_ContribucionesAPlanesYFondosDePensiones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,13,Personal Laboral,penloc2-econ-gast-cuentas:PersonalLaboral,penloc2-econ-gast-importes:PrevisionInicial
+P_G,130,Laboral Fijo,penloc2-econ-gast-cuentas:LaboralFijo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,130.00,Retribuciones básicas,penloc2-econ-gast-cuentas:PersonalLaboral_LaboralFijo_RetribucionesBasicas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,130.01,Horas extraordinarias,penloc2-econ-gast-cuentas:HorasExtraordinarias,penloc2-econ-gast-importes:PrevisionInicial
+P_G,130.02,Otras remuneraciones,penloc2-econ-gast-cuentas:PersonalLaboral_LaboralFijo_OtrasRemuneraciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,131,Laboral temporal,penloc2-econ-gast-cuentas:LaboralTemporal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,132,Retribuciones en especie,penloc2-econ-gast-cuentas:PersonalLaboral_RetribucionesEnEspecie,penloc2-econ-gast-importes:PrevisionInicial
+P_G,137,Contribuciones a planes y fondos de pensiones,penloc2-econ-gast-cuentas:PersonalLaboral_ContribucionesAPlanesYFondosDePensiones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,14,Otro personal,penloc2-econ-gast-cuentas:OtroPersonal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,143,Otro personal,penloc2-econ-gast-cuentas:OtroPersonal_OtroPersonal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,147,Contribuciones a planes y fondos de pensiones,penloc2-econ-gast-cuentas:OtroPersonal_ContribucionesAPlanesYFondosDePensiones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,15,Incentivos al rendimiento,penloc2-econ-gast-cuentas:IncentivosAlRendimiento,penloc2-econ-gast-importes:PrevisionInicial
+P_G,150,Productividad,penloc2-econ-gast-cuentas:Productividad,penloc2-econ-gast-importes:PrevisionInicial
+P_G,151,Gratificaciones,penloc2-econ-gast-cuentas:Gratificaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,152,Otros incentivos al rendimiento,penloc2-econ-gast-cuentas:OtrosIncentivosAlRendimiento,penloc2-econ-gast-importes:PrevisionInicial
+P_G,153,Complemento de dedicación especial,penloc2-econ-gast-cuentas:ComplementoDeDedicacionEspecial,penloc2-econ-gast-importes:PrevisionInicial
+P_G,16,"Cuotas, prestaciones y gastos sociales a cargo del empleador",penloc2-econ-gast-cuentas:CuotasPrestacionesYGastosSocialesACargoDelEmpleador,penloc2-econ-gast-importes:PrevisionInicial
+P_G,160,Cuotas sociales,penloc2-econ-gast-cuentas:CuotasSociales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,160.00,Seguridad Social,penloc2-econ-gast-cuentas:SeguridadSocial,penloc2-econ-gast-importes:PrevisionInicial
+P_G,160.08,Asistencia médico-farmacéutica,penloc2-econ-gast-cuentas:AsistenciaMedico-farmaceutica,penloc2-econ-gast-importes:PrevisionInicial
+P_G,160.09,Otras cuotas,penloc2-econ-gast-cuentas:OtrasCuotas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,161,Prestaciones sociales,penloc2-econ-gast-cuentas:PrestacionesSociales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,161.03,Pensiones excepcionales,penloc2-econ-gast-cuentas:PensionesExcepcionales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,161.04,Indemnizaciones al personal laboral por jubilaciones anticipadas,penloc2-econ-gast-cuentas:IndemnizacionesAlPersonalLaboralPorJubilacionesAnticipadas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,161.05,Pensiones a cargo de la Entidad local,penloc2-econ-gast-cuentas:PensionesACargoDeLaEntidadLocal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,161.07,Asistencia médico-farmacéutica a pensionistas,penloc2-econ-gast-cuentas:AsistenciaMedico-farmaceuticaAPensionistas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,162,Gastos sociales del personal,penloc2-econ-gast-cuentas:GastosSocialesDelPersonal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,162.00,Formación y perfeccionamiento del personal,penloc2-econ-gast-cuentas:FormacionYPerfeccionamientoDelPersonal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,162.01,Economatos y comedores,penloc2-econ-gast-cuentas:EconomatosYComedores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,162.02,Transporte de personal,penloc2-econ-gast-cuentas:TransporteDePersonal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,162.04,Acción social,penloc2-econ-gast-cuentas:EconomicaGastos_GastosDePersonal_CuotasPrestacionesYGastosSocialesACargoDelEmpleador_GastosSocialesDelPersonal_AccionSocial,penloc2-econ-gast-importes:PrevisionInicial
+P_G,162.05,Seguros,penloc2-econ-gast-cuentas:Seguros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,162.09,Otros gastos sociales,penloc2-econ-gast-cuentas:OtrosGastosSociales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,164,Complemento familiar,penloc2-econ-gast-cuentas:ComplementoFamiliar,penloc2-econ-gast-importes:PrevisionInicial
+P_G,2,GASTOS CORRIENTES EN BIENES Y SERVICIOS,penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,20,Arrendamientos y cánones,penloc2-econ-gast-cuentas:ArrendamientosYCanones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,200,Arrendamientos de terrenos y bienes naturales,penloc2-econ-gast-cuentas:ArrendamientosDeTerrenosYBienesNaturales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,202,Arrendamientos de edificios y otras construcciones,penloc2-econ-gast-cuentas:ArrendamientosDeEdificiosYOtrasConstrucciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,203,"Arrendamientos de maquinaria, instalaciones y utillaje",penloc2-econ-gast-cuentas:ArrendamientosDeMaquinariaInstalacionesYUtillaje,penloc2-econ-gast-importes:PrevisionInicial
+P_G,204,Arrendamientos de material de transporte,penloc2-econ-gast-cuentas:ArrendamientosDeMaterialDeTransporte,penloc2-econ-gast-importes:PrevisionInicial
+P_G,205,Arrendamientos de mobiliario y enseres,penloc2-econ-gast-cuentas:ArrendamientosDeMobiliarioYEnseres,penloc2-econ-gast-importes:PrevisionInicial
+P_G,206,Arrendamientos de equipos para procesos de información,penloc2-econ-gast-cuentas:ArrendamientosDeEquiposParaProcesosDeInformacion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,208,Arrendamientos de otro inmovilizado material,penloc2-econ-gast-cuentas:ArrendamientosDeOtroInmovilizadoMaterial,penloc2-econ-gast-importes:PrevisionInicial
+P_G,209,Cánones,penloc2-econ-gast-cuentas:Canones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,21,"Reparaciones, mantenimiento y conservación",penloc2-econ-gast-cuentas:ReparacionesMantenimientoYConservacion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,210,Infraestructuras y bienes naturales,penloc2-econ-gast-cuentas:InfraestructurasYBienesNaturales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,212,Edificios y otras construcciones,penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_EdificiosYOtrasConstrucciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,213,"Maquinaria, instalaciones técnicas y utillaje",penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_MaquinariaInstalacionesTecnicasYUtillaje,penloc2-econ-gast-importes:PrevisionInicial
+P_G,214,Elementos de transporte,penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_ElementosDeTransporte,penloc2-econ-gast-importes:PrevisionInicial
+P_G,215,Mobiliario,penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_Mobiliario,penloc2-econ-gast-importes:PrevisionInicial
+P_G,216,Equipos para procesos de información,penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_EquiposParaProcesosDeInformacion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,219,Otro inmovilizado material,penloc2-econ-gast-cuentas:OtroInmovilizadoMaterial,penloc2-econ-gast-importes:PrevisionInicial
+P_G,22,"Material, suministros y otros",penloc2-econ-gast-cuentas:MaterialSuministrosYOtros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,220,Material de oficina,penloc2-econ-gast-cuentas:MaterialDeOficina,penloc2-econ-gast-importes:PrevisionInicial
+P_G,220.00,Ordinario no inventariable,penloc2-econ-gast-cuentas:OrdinarioNoInventariable,penloc2-econ-gast-importes:PrevisionInicial
+P_G,220.01,"Prensa, revistas, libros y otras publicaciones",penloc2-econ-gast-cuentas:PrensaRevistasLibrosYOtrasPublicaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,220.02,Material informático no inventariable,penloc2-econ-gast-cuentas:MaterialInformaticoNoInventariable,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221,Suministros,penloc2-econ-gast-cuentas:Suministros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.00,Energía eléctrica,penloc2-econ-gast-cuentas:EnergiaElectrica,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.01,Agua,penloc2-econ-gast-cuentas:Agua,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.02,Gas,penloc2-econ-gast-cuentas:Gas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.03,Combustibles y carburantes,penloc2-econ-gast-cuentas:CombustiblesYCarburantes,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.04,Vestuario,penloc2-econ-gast-cuentas:Vestuario,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.05,Productos alimenticios,penloc2-econ-gast-cuentas:ProductosAlimenticios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.06,Productos farmacéuticos y material sanitario,penloc2-econ-gast-cuentas:ProductosFarmaceuticosYMaterialSanitario,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.10,Productos de limpieza y aseo,penloc2-econ-gast-cuentas:ProductosDeLimpiezaYAseo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.11,"Suministros de repuestos de maquinaria, utillaje y elementos de transporte",penloc2-econ-gast-cuentas:SuministrosDeRepuestosDeMaquinariaUtillajeYElementosDeTransporte,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.12,"Suministros de material electrónico, eléctrico y de telecomunicaciones",penloc2-econ-gast-cuentas:SuministrosDeMaterialElectronicoElectricoYDeTelecomunicaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.13,Manutención de animales,penloc2-econ-gast-cuentas:ManutencionDeAnimales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,221.99,Otros suministros,penloc2-econ-gast-cuentas:OtrosSuministros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,222,Comunicaciones,penloc2-econ-gast-cuentas:Comunicaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,222.00,Servicios de Telecomunicaciones,penloc2-econ-gast-cuentas:ServiciosDeTelecomunicaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,222.01,Postales,penloc2-econ-gast-cuentas:Postales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,222.02,Telegráficas,penloc2-econ-gast-cuentas:Telegraficas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,222.03,Informáticas,penloc2-econ-gast-cuentas:Informaticas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,222.99,Otros gastos en comunicaciones,penloc2-econ-gast-cuentas:OtrosGastosEnComunicaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,223,Transportes,penloc2-econ-gast-cuentas:Transportes,penloc2-econ-gast-importes:PrevisionInicial
+P_G,224,Primas de seguros,penloc2-econ-gast-cuentas:PrimasDeSeguros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,225,Tributos,penloc2-econ-gast-cuentas:Tributos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,225.00,Tributos estatales,penloc2-econ-gast-cuentas:TributosEstatales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,225.01,Tributos de las Comunidades Autónomas,penloc2-econ-gast-cuentas:TributosDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,225.02,Tributos de las Entidades locales,penloc2-econ-gast-cuentas:TributosDeLasEntidadesLocales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,226,Gastos diversos,penloc2-econ-gast-cuentas:GastosDiversos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,226.01,Atenciones protocolarias y representativas,penloc2-econ-gast-cuentas:AtencionesProtocolariasYRepresentativas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,226.02,Publicidad y propaganda,penloc2-econ-gast-cuentas:PublicidadYPropaganda,penloc2-econ-gast-importes:PrevisionInicial
+P_G,226.03,Publicación en Diarios Oficiales,penloc2-econ-gast-cuentas:PublicacionEnDiariosOficiales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,226.04,"Jurídicos, contenciosos",penloc2-econ-gast-cuentas:JuridicosContenciosos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,226.06,"Reuniones, conferencias y cursos",penloc2-econ-gast-cuentas:ReunionesConferenciasYCursos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,226.07,Oposiciones y pruebas selectivas,penloc2-econ-gast-cuentas:OposicionesYPruebasSelectivas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,226.09,Actividades culturales y deportivas,penloc2-econ-gast-cuentas:ActividadesCulturalesYDeportivas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,226.99,Otros gastos diversos,penloc2-econ-gast-cuentas:OtrosGastosDiversos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,227,Trabajos realizados por otras empresas y profesionales,penloc2-econ-gast-cuentas:TrabajosRealizadosPorOtrasEmpresasYProfesionales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,227.00,Limpieza y aseo,penloc2-econ-gast-cuentas:LimpiezaYAseo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,227.01,Seguridad,penloc2-econ-gast-cuentas:Seguridad,penloc2-econ-gast-importes:PrevisionInicial
+P_G,227.02,Valoraciones y peritajes,penloc2-econ-gast-cuentas:ValoracionesYPeritajes,penloc2-econ-gast-importes:PrevisionInicial
+P_G,227.04,"Custodia, depósito y almacenaje",penloc2-econ-gast-cuentas:CustodiaDepositoYAlmacenaje,penloc2-econ-gast-importes:PrevisionInicial
+P_G,227.05,Procesos electorales,penloc2-econ-gast-cuentas:ProcesosElectorales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,227.06,Estudios y trabajos técnicos,penloc2-econ-gast-cuentas:EstudiosYTrabajosTecnicos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,227.08,Servicios de recaudación a favor de la entidad,penloc2-econ-gast-cuentas:ServiciosDeRecaudacionAFavorDeLaEntidad,penloc2-econ-gast-importes:PrevisionInicial
+P_G,227.99,Otros trabajos realizados por otras empresas y profesionales,penloc2-econ-gast-cuentas:OtrosTrabajosRealizadosPorOtrasEmpresasYProfesionales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,23,Indemnizaciones por razón del servicio,penloc2-econ-gast-cuentas:IndemnizacionesPorRazonDelServicio,penloc2-econ-gast-importes:PrevisionInicial
+P_G,230,Dietas,penloc2-econ-gast-cuentas:Dietas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,230.00,De los miembros de los órganos de gobierno,penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios_IndemnizacionesPorRazonDelServicio_Dietas_DeLosMiembrosDeLosOrganosDeGobierno,penloc2-econ-gast-importes:PrevisionInicial
+P_G,230.10,Del personal directivo,penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios_IndemnizacionesPorRazonDelServicio_Dietas_DelPersonalDirectivo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,230.20,Del personal no directivo,penloc2-econ-gast-cuentas:Dietas_DelPersonalNoDirectivo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,231,Locomoción,penloc2-econ-gast-cuentas:Locomocion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,231.00,De los miembros de los órganos de gobierno,penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios_IndemnizacionesPorRazonDelServicio_Locomocion_DeLosMiembrosDeLosOrganosDeGobierno,penloc2-econ-gast-importes:PrevisionInicial
+P_G,231.10,Del personal directivo,penloc2-econ-gast-cuentas:GastosCorrientesEnBienesYServicios_IndemnizacionesPorRazonDelServicio_Locomocion_DelPersonalDirectivo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,231.20,Del personal no directivo,penloc2-econ-gast-cuentas:Locomocion_DelPersonalNoDirectivo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,233,Otras indemnizaciones,penloc2-econ-gast-cuentas:OtrasIndemnizaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,24,Gastos de publicaciones,penloc2-econ-gast-cuentas:GastosDePublicaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,240,Gastos de edición y distribución,penloc2-econ-gast-cuentas:GastosDeEdicionYDistribucion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,25,Trabajos realizados por administraciones públicas y otras entidades públicas,penloc2-econ-gast-cuentas:TrabajosRealizadosPorAdministracionesPublicasYOtrasEntidadesPublicas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,26,Trabajos realizados por Instituciones sin fines de lucro,penloc2-econ-gast-cuentas:TrabajosRealizadosPorInstitucionesSinFinesDeLucro,penloc2-econ-gast-importes:PrevisionInicial
+P_G,27,Gastos imprevistos y funciones no clasificadas,penloc2-econ-gast-cuentas:GastosImprevistosYFuncionesNoClasificadas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,3,GASTOS FINANCIEROS,penloc2-econ-gast-cuentas:GastosFinancieros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,30,De Deuda Pública en euros,penloc2-econ-gast-cuentas:DeDeudaPublicaEnEuros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,300,Intereses,penloc2-econ-gast-cuentas:DeDeudaPublicaEnEuros_Intereses,penloc2-econ-gast-importes:PrevisionInicial
+P_G,301,"Gastos de emisión, modificación y cancelación",penloc2-econ-gast-cuentas:DeDeudaPublicaEnEuros_GastosDeEmisionModificacionYCancelacion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,309,Otros gastos financieros de Deuda Pública en euros,penloc2-econ-gast-cuentas:OtrosGastosFinancierosDeDeudaPublicaEnEuros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,31,De préstamos y otras operaciones financieras en euros,penloc2-econ-gast-cuentas:DePrestamosYOtrasOperacionesFinancierasEnEuros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,310,Intereses,penloc2-econ-gast-cuentas:DePrestamosYOtrasOperacionesFinancierasEnEuros_Intereses,penloc2-econ-gast-importes:PrevisionInicial
+P_G,311,"Gastos de formalización, modificación y cancelación",penloc2-econ-gast-cuentas:DePrestamosYOtrasOperacionesFinancierasEnEuros_GastosDeFormalizacionModificacionYCancelacion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,319,Otros gastos financieros de préstamos y otras operaciones financieras en euros,penloc2-econ-gast-cuentas:OtrosGastosFinancierosDePrestamosYOtrasOperacionesFinancierasEnEuros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,32,De Deuda Pública en moneda distinta del euro,penloc2-econ-gast-cuentas:DeDeudaPublicaEnMonedaDistintaDelEuro,penloc2-econ-gast-importes:PrevisionInicial
+P_G,320,Intereses,penloc2-econ-gast-cuentas:DeDeudaPublicaEnMonedaDistintaDelEuro_Intereses,penloc2-econ-gast-importes:PrevisionInicial
+P_G,321,"Gastos de emisión, modificación y cancelación",penloc2-econ-gast-cuentas:DeDeudaPublicaEnMonedaDistintaDelEuro_GastosDeEmisionModificacionYCancelacion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,322,Diferencias de cambio,penloc2-econ-gast-cuentas:DeDeudaPublicaEnMonedaDistintaDelEuro_DiferenciasDeCambio,penloc2-econ-gast-importes:PrevisionInicial
+P_G,329,Otros gastos financieros de Deuda Pública en moneda distinta del euro,penloc2-econ-gast-cuentas:OtrosGastosFinancierosDeDeudaPublicaEnMonedaDistintaDelEuro,penloc2-econ-gast-importes:PrevisionInicial
+P_G,33,De préstamos y otras operaciones financieras en moneda distinta del euro,penloc2-econ-gast-cuentas:DePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro,penloc2-econ-gast-importes:PrevisionInicial
+P_G,330,Intereses,penloc2-econ-gast-cuentas:DePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro_Intereses,penloc2-econ-gast-importes:PrevisionInicial
+P_G,331,"Gastos de formalización, modificación y cancelación",penloc2-econ-gast-cuentas:DePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro_GastosDeFormalizacionModificacionYCancelacion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,332,Diferencias de cambio,penloc2-econ-gast-cuentas:DePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro_DiferenciasDeCambio,penloc2-econ-gast-importes:PrevisionInicial
+P_G,339,Otros gastos financieros de préstamos y otras operaciones financieras en moneda distinta del euro,penloc2-econ-gast-cuentas:OtrosGastosFinancierosDePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro,penloc2-econ-gast-importes:PrevisionInicial
+P_G,34,"De depósitos, fianzas y otros",penloc2-econ-gast-cuentas:DeDepositosFianzasYOtros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,340,Intereses de depósitos,penloc2-econ-gast-cuentas:EconomicaGastos_GastosFinancieros_DeDepositosFianzasYOtros_InteresesDeDepositos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,341,Intereses de fianzas,penloc2-econ-gast-cuentas:InteresesDeFianzas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,35,Intereses de demora y otros gastos financieros,penloc2-econ-gast-cuentas:InteresesDeDemoraYOtrosGastosFinancieros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,352,Intereses de demora,penloc2-econ-gast-cuentas:EconomicaGastos_GastosFinancieros_InteresesDeDemoraYOtrosGastosFinancieros_InteresesDeDemora,penloc2-econ-gast-importes:PrevisionInicial
+P_G,353,Operaciones de intercambio financiero,penloc2-econ-gast-cuentas:OperacionesDeIntercambioFinanciero,penloc2-econ-gast-importes:PrevisionInicial
+P_G,357,Ejecución de avales,penloc2-econ-gast-cuentas:EjecucionDeAvales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,358,Intereses por operaciones de arrendamiento financiero (“leasing”),penloc2-econ-gast-cuentas:InteresesPorOperacionesDeArrendamientoFinancieroLeasing,penloc2-econ-gast-importes:PrevisionInicial
+P_G,359,Otros gastos financieros,penloc2-econ-gast-cuentas:OtrosGastosFinancieros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,4,TRANSFERENCIAS CORRIENTES,penloc2-econ-gast-cuentas:TransferenciasCorrientes,penloc2-econ-gast-importes:PrevisionInicial
+P_G,40,A la Administración General de la Entidad Local,penloc2-econ-gast-cuentas:TransferenciasCorrientes_ALaAdministracionGeneralDeLaEntidadLocal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,41,A Organismos Autónomos de la Entidad Local,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AOrganismosAutonomosDeLaEntidadLocal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,42,A la Administración del Estado,penloc2-econ-gast-cuentas:TransferenciasCorrientes_ALaAdministracionDelEstado,penloc2-econ-gast-importes:PrevisionInicial
+P_G,420,A la Administración General del Estado,penloc2-econ-gast-cuentas:TransferenciasCorrientes_ALaAdministracionDelEstado_ALaAdministracionGeneralDelEstado,penloc2-econ-gast-importes:PrevisionInicial
+P_G,421,A Organismos Autónomos y agencias del Estado,penloc2-econ-gast-cuentas:AOrganismosAutonomosYAgenciasDelEstado,penloc2-econ-gast-importes:PrevisionInicial
+P_G,421.00,Al Servicio Público de Empleo Estatal,penloc2-econ-gast-cuentas:TransferenciasCorrientes_ALaAdministracionDelEstado_AOrganismosAutonomosYAgenciasDelEstado_AlServicioPublicoDeEmpleoEstatal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,421.10,A otros organismos autónomos,penloc2-econ-gast-cuentas:TransferenciasCorrientes_ALaAdministracionDelEstado_AOrganismosAutonomosYAgenciasDelEstado_AOtrosOrganismosAutonomos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,422,A Fundaciones estatales,penloc2-econ-gast-cuentas:TransferenciasCorrientes_ALaAdministracionDelEstado_AFundacionesEstatales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,423,"A sociedades mercantiles estatales, entidades públicas empresariales y otros organismos públicos",penloc2-econ-gast-cuentas:TransferenciasCorrientes_ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,423.00,Subvenciones para fomento del empleo,penloc2-econ-gast-cuentas:ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos_SubvencionesParaFomentoDelEmpleo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,423.10,Subvenciones para bonificación de intereses y primas de seguros,penloc2-econ-gast-cuentas:ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos_SubvencionesParaBonificacionDeInteresesYPrimasDeSeguros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,423.20,Subvenciones para reducir el precio a pagar por los consumidores,penloc2-econ-gast-cuentas:ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos_SubvencionesParaReducirElPrecioAPagarPorLosConsumidores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,423.90,"Otras subvenciones a sociedades mercantiles estatales, entidades públicas empresariales y otros organismos públicos",penloc2-econ-gast-cuentas:OtrasSubvencionesASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,43,A la Seguridad Social,penloc2-econ-gast-cuentas:TransferenciasCorrientes_ALaSeguridadSocial,penloc2-econ-gast-importes:PrevisionInicial
+P_G,44,A entes públicos y sociedades mercantiles de la Entidad Local,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,440,Subvenciones para fomento del empleo,penloc2-econ-gast-cuentas:AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_SubvencionesParaFomentoDelEmpleo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,441,Subvenciones para bonificación de intereses y primas de seguros,penloc2-econ-gast-cuentas:AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_SubvencionesParaBonificacionDeInteresesYPrimasDeSeguros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,442,Subvenciones para reducir el precio a pagar por los consumidores,penloc2-econ-gast-cuentas:AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_SubvencionesParaReducirElPrecioAPagarPorLosConsumidores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,449,Otras subvenciones a entes públicos y sociedades mercantiles de la Entidad Local,penloc2-econ-gast-cuentas:OtrasSubvencionesAEntesPublicosYSociedadesMercantilesDeLaEntidadLocal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,45,A Comunidades Autónomas,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,450,A la Administración General de las Comunidades Autónomas,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AComunidadesAutonomas_ALaAdministracionGeneralDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,451,A Organismos Autónomos y agencias de las Comunidades Autónomas,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AComunidadesAutonomas_AOrganismosAutonomosYAgenciasDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,452,A fundaciones de las Comunidades Autónomas,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AComunidadesAutonomas_AFundacionesDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,453,"A sociedades mercantiles, entidades públicas empresariales y otros organismos públicos dependientes de las Comunidades Autónomas",penloc2-econ-gast-cuentas:TransferenciasCorrientes_AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,453.00,Subvenciones para fomento del empleo,penloc2-econ-gast-cuentas:AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas_SubvencionesParaFomentoDelEmpleo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,453.10,Subvenciones para bonificación de intereses y primas de seguros,penloc2-econ-gast-cuentas:AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas_SubvencionesParaBonificacionDeInteresesYPrimasDeSeguros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,453.20,Subvenciones para reducir el precio a pagar por los consumidores,penloc2-econ-gast-cuentas:AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas_SubvencionesParaReducirElPrecioAPagarPorLosConsumidores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,453.90,"Otras subvenciones a sociedades mercantiles, entidades públicas empresariales y otros organismos públicos dependientes de las Comunidades Autónomas",penloc2-econ-gast-cuentas:OtrasSubvencionesASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,46,A Entidades Locales,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AEntidadesLocales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,461,"A Diputaciones, Consejos o Cabildos insulares",penloc2-econ-gast-cuentas:ADiputacionesConsejosOCabildosInsulares,penloc2-econ-gast-importes:PrevisionInicial
+P_G,462,A Ayuntamientos,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AEntidadesLocales_AAyuntamientos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,463,A Mancomunidades,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AEntidadesLocales_AMancomunidades,penloc2-econ-gast-importes:PrevisionInicial
+P_G,464,A Áreas Metropolitanas,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AEntidadesLocales_AAreasMetropolitanas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,465,A Comarcas,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AEntidadesLocales_AComarcas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,466,A otras Entidades que agrupen municipios,penloc2-econ-gast-cuentas:AOtrasEntidadesQueAgrupenMunicipios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,467,A Consorcios,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AEntidadesLocales_AConsorcios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,468,A Entidades Locales Menores,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AEntidadesLocales_AEntidadesLocalesMenores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,47,A Empresas privadas,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AEmpresasPrivadas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,470,Subvenciones para fomento del empleo,penloc2-econ-gast-cuentas:AEmpresasPrivadas_SubvencionesParaFomentoDelEmpleo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,471,Subvenciones para bonificación de intereses y primas de seguros,penloc2-econ-gast-cuentas:AEmpresasPrivadas_SubvencionesParaBonificacionDeInteresesYPrimasDeSeguros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,472,Subvenciones para reducir el precio a pagar por los consumidores,penloc2-econ-gast-cuentas:AEmpresasPrivadas_SubvencionesParaReducirElPrecioAPagarPorLosConsumidores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,479,Otras subvenciones a Empresas privadas,penloc2-econ-gast-cuentas:OtrasSubvencionesAEmpresasPrivadas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,48,A Familias e Instituciones sin fines de lucro,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AFamiliasEInstitucionesSinFinesDeLucro,penloc2-econ-gast-importes:PrevisionInicial
+P_G,49,Al exterior,penloc2-econ-gast-cuentas:TransferenciasCorrientes_AlExterior,penloc2-econ-gast-importes:PrevisionInicial
+P_G,5,FONDO DE CONTINGENCIA Y OTROS IMPREVISTOS,penloc2-econ-gast-cuentas:FondoDeContingenciaYOtrosImprevistos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,50,Dotación al Fondo de Contingencia del ejercicio presupuestario,penloc2-econ-gast-cuentas:DotacionAlFondoDeContingenciaDelEjercicioPresupuestario,penloc2-econ-gast-importes:PrevisionInicial
+P_G,500,Fondo de Contingencia (art. 31 LO 2/12 de Estabilidad presupuestaria),penloc2-econ-gast-cuentas:FondoDeContingenciaArt31LO2_12DeEstabilidadPresupuestaria,penloc2-econ-gast-importes:PrevisionInicial
+P_G,6,INVERSIONES REALES,penloc2-econ-gast-cuentas:InversionesReales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,60,Inversión nueva en infraestructuras y bienes destinados al uso general,penloc2-econ-gast-cuentas:InversionNuevaEnInfraestructurasYBienesDestinadosAlUsoGeneral,penloc2-econ-gast-importes:PrevisionInicial
+P_G,600,Inversiones en terrenos,penloc2-econ-gast-cuentas:InversionNuevaEnInfraestructurasYBienesDestinadosAlUsoGeneral_InversionesEnTerrenos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,609,Otras inversiones nuevas en infraestructuras y bienes destinados al uso general,penloc2-econ-gast-cuentas:OtrasInversionesNuevasEnInfraestructurasYBienesDestinadosAlUsoGeneral,penloc2-econ-gast-importes:PrevisionInicial
+P_G,61,Inversiones de reposición de infraestructuras y bienes destinados al uso general,penloc2-econ-gast-cuentas:InversionesDeReposicionDeInfraestructurasYBienesDestinadosAlUsoGeneral,penloc2-econ-gast-importes:PrevisionInicial
+P_G,610,Inversiones en terrenos,penloc2-econ-gast-cuentas:InversionesDeReposicionDeInfraestructurasYBienesDestinadosAlUsoGeneral_InversionesEnTerrenos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,619,Otras inversiones de reposición en infraestructuras y bienes destinados al uso general,penloc2-econ-gast-cuentas:OtrasInversionesDeReposicionEnInfraestructurasYBienesDestinadosAlUsoGeneral,penloc2-econ-gast-importes:PrevisionInicial
+P_G,62,Inversión nueva asociada al funcionamiento operativo de los servicios,penloc2-econ-gast-cuentas:InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,621,Terrenos y bienes naturales,penloc2-econ-gast-cuentas:InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_TerrenosYBienesNaturales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,622,Edificios y otras construcciones,penloc2-econ-gast-cuentas:InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_EdificiosYOtrasConstrucciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,623,"Maquinaria, instalaciones técnicas y utillaje",penloc2-econ-gast-cuentas:InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_MaquinariaInstalacionesTecnicasYUtillaje,penloc2-econ-gast-importes:PrevisionInicial
+P_G,624,Elementos de transporte,penloc2-econ-gast-cuentas:InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_ElementosDeTransporte,penloc2-econ-gast-importes:PrevisionInicial
+P_G,625,Mobiliario,penloc2-econ-gast-cuentas:InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_Mobiliario,penloc2-econ-gast-importes:PrevisionInicial
+P_G,626,Equipos para procesos de información,penloc2-econ-gast-cuentas:InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_EquiposParaProcesosDeInformacion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,627,Proyectos complejos,penloc2-econ-gast-cuentas:InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_ProyectosComplejos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,629,Otras inversiones nuevas asociadas al funcionamiento operativo de los servicios,penloc2-econ-gast-cuentas:OtrasInversionesNuevasAsociadasAlFuncionamientoOperativoDeLosServicios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,63,Inversión de reposición asociada al funcionamiento operativo de los servicios,penloc2-econ-gast-cuentas:InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,631,Terrenos y bienes naturales,penloc2-econ-gast-cuentas:InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_TerrenosYBienesNaturales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,632,Edificios y otras construcciones,penloc2-econ-gast-cuentas:InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_EdificiosYOtrasConstrucciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,633,"Maquinaria, instalaciones técnicas y utillaje",penloc2-econ-gast-cuentas:InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_MaquinariaInstalacionesTecnicasYUtillaje,penloc2-econ-gast-importes:PrevisionInicial
+P_G,634,Elementos de transporte,penloc2-econ-gast-cuentas:InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_ElementosDeTransporte,penloc2-econ-gast-importes:PrevisionInicial
+P_G,635,Mobiliario,penloc2-econ-gast-cuentas:InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_Mobiliario,penloc2-econ-gast-importes:PrevisionInicial
+P_G,636,Equipos para procesos de información,penloc2-econ-gast-cuentas:InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_EquiposParaProcesosDeInformacion,penloc2-econ-gast-importes:PrevisionInicial
+P_G,637,Proyectos complejos,penloc2-econ-gast-cuentas:InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_ProyectosComplejos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,639,Otras inversiones de reposición asociadas al funcionamiento operativo de los servicios,penloc2-econ-gast-cuentas:OtrasInversionesDeReposicionAsociadasAlFuncionamientoOperativoDeLosServicios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,64,Gastos en inversiones de carácter inmaterial,penloc2-econ-gast-cuentas:GastosEnInversionesDeCaracterInmaterial,penloc2-econ-gast-importes:PrevisionInicial
+P_G,640,Gastos en inversiones de carácter inmaterial,penloc2-econ-gast-cuentas:GastosEnInversionesDeCaracterInmaterial_GastosEnInversionesDeCaracterInmaterial,penloc2-econ-gast-importes:PrevisionInicial
+P_G,641,Gastos en aplicaciones informáticas,penloc2-econ-gast-cuentas:GastosEnAplicacionesInformaticas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,648,Cuotas netas de intereses por operaciones de arrendamiento financiero (“leasing”),penloc2-econ-gast-cuentas:CuotasNetasDeInteresesPorOperacionesDeArrendamientoFinancieroLeasing,penloc2-econ-gast-importes:PrevisionInicial
+P_G,65,Inversiones gestionadas para otros entes públicos,penloc2-econ-gast-cuentas:InversionesGestionadasParaOtrosEntesPublicos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,650,Gastos en inversiones gestionadas para otros entes públicos,penloc2-econ-gast-cuentas:GastosEnInversionesGestionadasParaOtrosEntesPublicos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,68,Gastos en inversiones de bienes patrimoniales,penloc2-econ-gast-cuentas:GastosEnInversionesDeBienesPatrimoniales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,681,Terrenos y bienes naturales,penloc2-econ-gast-cuentas:GastosEnInversionesDeBienesPatrimoniales_TerrenosYBienesNaturales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,682,Edificios y otras construcciones,penloc2-econ-gast-cuentas:InversionesReales_GastosEnInversionesDeBienesPatrimoniales_EdificiosYOtrasConstrucciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,689,Otros gastos en inversiones de bienes patrimoniales,penloc2-econ-gast-cuentas:OtrosGastosEnInversionesDeBienesPatrimoniales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,69,Inversiones en bienes comunales,penloc2-econ-gast-cuentas:InversionesEnBienesComunales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,690,Terrenos y bienes naturales,penloc2-econ-gast-cuentas:InversionesEnBienesComunales_TerrenosYBienesNaturales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,692,Inversión en infraestructuras,penloc2-econ-gast-cuentas:InversionEnInfraestructuras,penloc2-econ-gast-importes:PrevisionInicial
+P_G,7,TRANSFERENCIAS DE CAPITAL,penloc2-econ-gast-cuentas:EconomicaGastos_TransferenciasDeCapital,penloc2-econ-gast-importes:PrevisionInicial
+P_G,70,A la Administración General de la Entidad Local,penloc2-econ-gast-cuentas:TransferenciasDeCapital_ALaAdministracionGeneralDeLaEntidadLocal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,71,A Organismos Autónomos de la Entidad Local,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AOrganismosAutonomosDeLaEntidadLocal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,72,A la Administración del Estado,penloc2-econ-gast-cuentas:TransferenciasDeCapital_ALaAdministracionDelEstado,penloc2-econ-gast-importes:PrevisionInicial
+P_G,720,A la Administración General del Estado,penloc2-econ-gast-cuentas:TransferenciasDeCapital_ALaAdministracionDelEstado_ALaAdministracionGeneralDelEstado,penloc2-econ-gast-importes:PrevisionInicial
+P_G,721,A Organismos Autónomos y agencias,penloc2-econ-gast-cuentas:EconomicaGastos_TransferenciasDeCapital_ALaAdministracionDelEstado_AOrganismosAutonomosYAgencias,penloc2-econ-gast-importes:PrevisionInicial
+P_G,721.00,Al Servicio Público de Empleo Estatal,penloc2-econ-gast-cuentas:TransferenciasDeCapital_ALaAdministracionDelEstado_AOrganismosAutonomosYAgencias_AlServicioPublicoDeEmpleoEstatal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,721.09,A otros organismos autónomos,penloc2-econ-gast-cuentas:TransferenciasDeCapital_ALaAdministracionDelEstado_AOrganismosAutonomosYAgencias_AOtrosOrganismosAutonomos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,722,A fundaciones estatales,penloc2-econ-gast-cuentas:TransferenciasDeCapital_ALaAdministracionDelEstado_AFundacionesEstatales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,723,"A sociedades mercantiles estatales, entidades públicas empresariales y otros organismos públicos",penloc2-econ-gast-cuentas:TransferenciasDeCapital_ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,73,A la Seguridad Social,penloc2-econ-gast-cuentas:TransferenciasDeCapital_ALaSeguridadSocial,penloc2-econ-gast-importes:PrevisionInicial
+P_G,74,A entes públicos y sociedades mercantiles de la Entidad local,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal,penloc2-econ-gast-importes:PrevisionInicial
+P_G,75,A Comunidades Autónomas,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,750,A la Administración General de las Comunidades Autónomas,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AComunidadesAutonomas_ALaAdministracionGeneralDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,751,A Organismos Autónomos y agencias de las Comunidades Autónomas,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AComunidadesAutonomas_AOrganismosAutonomosYAgenciasDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,752,A fundaciones de las Comunidades Autónomas,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AComunidadesAutonomas_AFundacionesDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,753,"A sociedades mercantiles, entidades públicas empresariales y otros organismos públicos dependientes de las Comunidades Autónomas",penloc2-econ-gast-cuentas:TransferenciasDeCapital_AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,76,A Entidades Locales,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AEntidadesLocales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,761,"A Diputaciones, Consejos o Cabildos",penloc2-econ-gast-cuentas:ADiputacionesConsejosOCabildos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,762,A Ayuntamientos,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AEntidadesLocales_AAyuntamientos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,763,A Mancomunidades,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AEntidadesLocales_AMancomunidades,penloc2-econ-gast-importes:PrevisionInicial
+P_G,764,A Áreas Metropolitanas,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AEntidadesLocales_AAreasMetropolitanas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,765,A Comarcas,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AEntidadesLocales_AComarcas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,766,A Entidades que agrupen Municipios,penloc2-econ-gast-cuentas:AEntidadesQueAgrupenMunicipios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,767,A Consorcios,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AEntidadesLocales_AConsorcios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,768,A Entidades Locales Menores,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AEntidadesLocales_AEntidadesLocalesMenores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,77,A empresas privadas,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AEmpresasPrivadas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,78,A familias e instituciones sin fines de lucro,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AFamiliasEInstitucionesSinFinesDeLucro,penloc2-econ-gast-importes:PrevisionInicial
+P_G,79,Al exterior,penloc2-econ-gast-cuentas:TransferenciasDeCapital_AlExterior,penloc2-econ-gast-importes:PrevisionInicial
+P_G,8,ACTIVOS FINANCIEROS,penloc2-econ-gast-cuentas:EconomicaGastos_ActivosFinancieros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,80,Adquisición de deuda del sector público,penloc2-econ-gast-cuentas:AdquisicionDeDeudaDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,800,Adquisición de deuda del sector público a corto plazo,penloc2-econ-gast-cuentas:AdquisicionDeDeudaDelSectorPublicoACortoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,800.00,Al Estado,penloc2-econ-gast-cuentas:AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoACortoPlazo_AlEstado,penloc2-econ-gast-importes:PrevisionInicial
+P_G,800.10,A Comunidades Autónomas,penloc2-econ-gast-cuentas:ActivosFinancieros_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoACortoPlazo_AComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,800.20,A Entidades locales,penloc2-econ-gast-cuentas:ActivosFinancieros_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoACortoPlazo_AEntidadesLocales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,800.90,A otros subsectores,penloc2-econ-gast-cuentas:AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoACortoPlazo_AOtrosSubsectores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,801,Adquisición de deuda del sector público a largo plazo,penloc2-econ-gast-cuentas:AdquisicionDeDeudaDelSectorPublicoALargoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,801.00,Al Estado,penloc2-econ-gast-cuentas:AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoALargoPlazo_AlEstado,penloc2-econ-gast-importes:PrevisionInicial
+P_G,801.10,A Comunidades Autónomas,penloc2-econ-gast-cuentas:ActivosFinancieros_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoALargoPlazo_AComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,801.20,A Entidades locales,penloc2-econ-gast-cuentas:ActivosFinancieros_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoALargoPlazo_AEntidadesLocales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,801.90,A otros subsectores,penloc2-econ-gast-cuentas:AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoALargoPlazo_AOtrosSubsectores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,81,Adquisición de Obligaciones y Bonos fuera del sector público,penloc2-econ-gast-cuentas:AdquisicionDeObligacionesYBonosFueraDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,810,Adquisición de obligaciones y bonos fuera del sector público a corto plazo. Desarrollo por sectores.,penloc2-econ-gast-cuentas:AdquisicionDeObligacionesYBonosFueraDelSectorPublicoACortoPlazoDesarrolloPorSectores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,811,Adquisición de obligaciones y bonos fuera del sector público a largo plazo. Desarrollo por sectores.,penloc2-econ-gast-cuentas:AdquisicionDeObligacionesYBonosFueraDelSectorPublicoALargoPlazoDesarrolloPorSectores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,82,Concesión préstamos al sector público,penloc2-econ-gast-cuentas:ConcesionDePrestamosAlSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,820,Préstamos a corto plazo,penloc2-econ-gast-cuentas:PrestamosACortoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,820.00,Al Estado,penloc2-econ-gast-cuentas:ConcesionPrestamosAlSectorPublico_PrestamosACortoPlazo_AlEstado,penloc2-econ-gast-importes:PrevisionInicial
+P_G,820.10,A Comunidades Autónomas,penloc2-econ-gast-cuentas:ActivosFinancieros_ConcesionPrestamosAlSectorPublico_PrestamosACortoPlazo_AComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,820.20,A Entidades locales,penloc2-econ-gast-cuentas:ActivosFinancieros_ConcesionPrestamosAlSectorPublico_PrestamosACortoPlazo_AEntidadesLocales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,820.90,A otros subsectores,penloc2-econ-gast-cuentas:ConcesionPrestamosAlSectorPublico_PrestamosACortoPlazo_AOtrosSubsectores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,821,Préstamos a largo plazo,penloc2-econ-gast-cuentas:PrestamosALargoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,821.00,Al Estado,penloc2-econ-gast-cuentas:ConcesionPrestamosAlSectorPublico_PrestamosALargoPlazo_AlEstado,penloc2-econ-gast-importes:PrevisionInicial
+P_G,821.10,A Comunidades Autónomas,penloc2-econ-gast-cuentas:ActivosFinancieros_ConcesionPrestamosAlSectorPublico_PrestamosALargoPlazo_AComunidadesAutonomas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,821.20,A Entidades locales,penloc2-econ-gast-cuentas:ActivosFinancieros_ConcesionPrestamosAlSectorPublico_PrestamosALargoPlazo_AEntidadesLocales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,821.90,A otros subsectores,penloc2-econ-gast-cuentas:ConcesionPrestamosAlSectorPublico_PrestamosALargoPlazo_AOtrosSubsectores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,83,Concesión de préstamos fuera del sector público,penloc2-econ-gast-cuentas:ConcesionDePrestamosFueraDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,830,Préstamos a corto plazo. Desarrollo por sectores.,penloc2-econ-gast-cuentas:PrestamosACortoPlazoDesarrolloPorSectores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,831,Préstamos a largo plazo. Desarrollo por sectores.,penloc2-econ-gast-cuentas:PrestamosALargoPlazoDesarrolloPorSectores,penloc2-econ-gast-importes:PrevisionInicial
+P_G,84,Constitución de depósitos y fianzas,penloc2-econ-gast-cuentas:ConstitucionDeDepositosYFianzas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,840,Depósitos,penloc2-econ-gast-cuentas:Depositos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,840.00,A corto plazo,penloc2-econ-gast-cuentas:Depositos_ACortoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,840.10,A largo plazo,penloc2-econ-gast-cuentas:Depositos_ALargoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,841,Fianzas,penloc2-econ-gast-cuentas:Fianzas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,841.00,A corto plazo,penloc2-econ-gast-cuentas:Fianzas_ACortoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,841.10,A largo plazo,penloc2-econ-gast-cuentas:Fianzas_ALargoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,85,Adquisición de acciones y participaciones del sector público,penloc2-econ-gast-cuentas:AdquisicionDeAccionesYParticipacionesDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,850,Adquisición de acciones y participaciones del sector público,penloc2-econ-gast-cuentas:AdquisicionDeAccionesYParticipacionesDelSectorPublico_AdquisicionDeAccionesYParticipacionesDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,850.10,Adquisición de acciones y participaciones para compensar pérdidas,penloc2-econ-gast-cuentas:AdquisicionDeAccionesYParticipacionesParaCompensarPerdidas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,850.20,Adquisición de acciones y participaciones para financiar inversiones no rentables,penloc2-econ-gast-cuentas:AdquisicionDeAccionesYParticipacionesParaFinanciarInversionesNoRentables,penloc2-econ-gast-importes:PrevisionInicial
+P_G,850.90,Resto de adquisiciones de acciones dentro del sector público,penloc2-econ-gast-cuentas:RestoDeAdquisicionesDeAccionesDentroDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,86,Adquisición de acciones y participaciones fuera del sector público,penloc2-econ-gast-cuentas:AdquisicionDeAccionesYParticipacionesFueraDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,860,Adquisición de acciones y participaciones fuera del sector público,penloc2-econ-gast-cuentas:AdquisicionDeAccionesYParticipacionesFueraDelSectorPublico_AdquisicionDeAccionesYParticipacionesFueraDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,860.10,De empresas nacionales,penloc2-econ-gast-cuentas:DeEmpresasNacionales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,860.20,De empresas de la Unión Europea,penloc2-econ-gast-cuentas:DeEmpresasDeLaUnionEuropea,penloc2-econ-gast-importes:PrevisionInicial
+P_G,860.90,De otras empresas,penloc2-econ-gast-cuentas:DeOtrasEmpresas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,87,Aportaciones patrimoniales,penloc2-econ-gast-cuentas:AportacionesPatrimoniales,penloc2-econ-gast-importes:PrevisionInicial
+P_G,870,Aportaciones a fundaciones,penloc2-econ-gast-cuentas:AportacionesAFundaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,871,Aportaciones a consorcios,penloc2-econ-gast-cuentas:AportacionesAConsorcios,penloc2-econ-gast-importes:PrevisionInicial
+P_G,872,Aportaciones a otros entes,penloc2-econ-gast-cuentas:AportacionesAOtrosEntes,penloc2-econ-gast-importes:PrevisionInicial
+P_G,872.10,Aportaciones para compensar pérdidas,penloc2-econ-gast-cuentas:AportacionesParaCompensarPerdidas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,872.20,Aportaciones para financiar inversiones no rentables,penloc2-econ-gast-cuentas:AportacionesParaFinanciarInversionesNoRentables,penloc2-econ-gast-importes:PrevisionInicial
+P_G,872.90,Resto de aportaciones,penloc2-econ-gast-cuentas:RestoDeAportaciones,penloc2-econ-gast-importes:PrevisionInicial
+P_G,9,PASIVOS FINANCIEROS,penloc2-econ-gast-cuentas:EconomicaGastos_PasivosFinancieros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,90,Amortización de Deuda Pública en euros,penloc2-econ-gast-cuentas:AmortizacionDeDeudaPublicaEnEuros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,900,Amortización de Deuda Pública en euros a corto plazo,penloc2-econ-gast-cuentas:AmortizacionDeDeudaPublicaEnEurosACortoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,901,Amortización de Deuda Pública en euros a largo plazo,penloc2-econ-gast-cuentas:AmortizacionDeDeudaPublicaEnEurosALargoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,91,Amortización de préstamos y de operaciones en euros,penloc2-econ-gast-cuentas:AmortizacionDePrestamosYDeOperacionesEnEuros,penloc2-econ-gast-importes:PrevisionInicial
+P_G,910,Amortización de préstamos a corto plazo de entes del sector público,penloc2-econ-gast-cuentas:AmortizacionDePrestamosACortoPlazoDeEntesDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,911,Amortización de préstamos a largo plazo de entes del sector público,penloc2-econ-gast-cuentas:AmortizacionDePrestamosALargoPlazoDeEntesDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,912,Amortización de préstamos a corto plazo de entes de fuera del sector público,penloc2-econ-gast-cuentas:AmortizacionDePrestamosACortoPlazoDeEntesDeFueraDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,913,Amortización de préstamos a largo plazo de entes de fuera del sector público,penloc2-econ-gast-cuentas:AmortizacionDePrestamosALargoPlazoDeEntesDeFueraDelSectorPublico,penloc2-econ-gast-importes:PrevisionInicial
+P_G,92,Amortización de Deuda Pública en moneda distinta del euro,penloc2-econ-gast-cuentas:AmortizacionDeDeudaPublicaEnMonedaDistintaDelEuro,penloc2-econ-gast-importes:PrevisionInicial
+P_G,920,Amortización de Deuda Pública en moneda distinta del euro a corto plazo,penloc2-econ-gast-cuentas:AmortizacionDeDeudaPublicaEnMonedaDistintaDelEuroACortoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,921,Amortización de Deuda Pública en moneda distinta del euro a largo plazo,penloc2-econ-gast-cuentas:AmortizacionDeDeudaPublicaEnMonedaDistintaDelEuroALargoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,93,Amortización de préstamos en moneda distinta del euro,penloc2-econ-gast-cuentas:AmortizacionDePrestamosEnMonedaDistintaDelEuro,penloc2-econ-gast-importes:PrevisionInicial
+P_G,930,Amortización de préstamos en moneda distinta del euro a corto plazo,penloc2-econ-gast-cuentas:AmortizacionDePrestamosEnMonedaDistintaDelEuroACortoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,931,Amortización de préstamos en moneda distinta del euro a largo plazo,penloc2-econ-gast-cuentas:AmortizacionDePrestamosEnMonedaDistintaDelEuroALargoPlazo,penloc2-econ-gast-importes:PrevisionInicial
+P_G,94,Devolución de depósitos y fianzas,penloc2-econ-gast-cuentas:DevolucionDeDepositosYFianzas,penloc2-econ-gast-importes:PrevisionInicial
+P_G,940,Devolución de depósitos,penloc2-econ-gast-cuentas:EconomicaGastos_PasivosFinancieros_DevolucionDeDepositosYFianzas_DevolucionDeDepositos,penloc2-econ-gast-importes:PrevisionInicial
+P_G,941,Devolución de fianzas,penloc2-econ-gast-cuentas:EconomicaGastos_PasivosFinancieros_DevolucionDeDepositosYFianzas_DevolucionDeFianzas,penloc2-econ-gast-importes:PrevisionInicial

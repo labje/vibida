@@ -1350,9 +1350,9 @@ function getInputTreemaps(){
       code = (rango == "DIP") ? $("select#diputaciones option:selected").val() : $("select#municipios option:selected").val();
 
   var fileName = "data/" + periodo + "-" + code + "-" + option.split("-").slice(-1) + ".csv";
-  var targetField = (option == "prog") ? 
-    ["contexto_lenloc0","contexto_lenloc1","contexto_lenloc2","contexto_lenloc3","contexto_lenloc4","contexto_lenloc5","contexto_lenloc6","contexto_lenloc7"]
-     : "contexto_lenloc";
+  var targetField = (option != "prog") ? "contexto_lenloc" :
+    ((parseInt(periodo) < 2013) ? ["contexto_lenloc0","contexto_lenloc1","contexto_lenloc2","contexto_lenloc3","contexto_lenloc4","contexto_lenloc5","contexto_lenloc6","contexto_lenloc7"]
+      : ["contexto_lenloc0","contexto_lenloc1","contexto_lenloc2","contexto_lenloc3","contexto_lenloc4","contexto_lenloc5","contexto_lenloc6","contexto_lenloc7","contexto_lenloc8"]);
  
   var dataInfo = {fileName: fileName, targetField: targetField};
   return dataInfo;

@@ -327,6 +327,7 @@ var abbrs = {
 	"GASTOS CORRIENTES EN BIENES Y SERVICIOS":"GTOS CORRIENTES",
 	"GASTOS FINANCIEROS":"GTOS FINANCIEROS",
 	"TRANSFERENCIAS CORRIENTES":"TRANSF.CORRIENTES",
+	"FONDO DE CONTINGENCIA Y OTROS IMPREVISTOS":"FONDO DE CONTINGENCIA", //Añadido por nueva cuenta de gastos cap5
 	"INVERSIONES REALES":"INVERSIONES",
 	"TRANSFERENCIAS DE CAPITAL":"TRANSF. CAPITAL",
 	"ACTIVOS FINANCIEROS":"ACTIVOS FINAN.",
@@ -426,14 +427,13 @@ function updateMHBar(nameFile){
 			d.liq = +d.contexto_lenloc;
 			d.pre = +d.contexto_penloc;
 		} else { //clasificación por programa
-			d.liq = +d.contexto_lenloc0 + +d.contexto_lenloc1 + 
-				    +d.contexto_lenloc2 + +d.contexto_lenloc3 + 
-				    +d.contexto_lenloc4 + +d.contexto_lenloc5 +
-				    +d.contexto_lenloc6 + +d.contexto_lenloc7;
-			d.pre = +d.contexto_penloc0 + +d.contexto_penloc1 + 
-				    +d.contexto_penloc2 + +d.contexto_penloc3 + 
-				    +d.contexto_penloc4 + +d.contexto_penloc5 +
-				    +d.contexto_penloc6 + +d.contexto_penloc7;
+			var keysStartWith = function(obj, cad){return Object.keys(obj).filter(function(e){return cad == e.slice(0,cad.length);});}
+			var liq_contexts = keysStartWith(d,"contexto_lenloc");
+			var pre_contexts = keysStartWith(d,"contexto_penloc");
+			d.liq = 0;
+			d.pre = 0;
+			liq_contexts.forEach(function(e){d.liq += +d[e]});
+			pre_contexts.forEach(function(e){d.pre += +d[e]});
 		}
 
 		if(d.id.length == 1){
